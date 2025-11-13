@@ -246,6 +246,7 @@
     :root {
         --base: var(--base--light);
         --base-rgb: var(--base-rgb--light);
+        --base-rgb: var(--base-rgb--light);
         --base-tint: var(--base-tint--light);
         --base-shade: var(--base-shade--light);
         --base-opp: var(--base-opp--light);
