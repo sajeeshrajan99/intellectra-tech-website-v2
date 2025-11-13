@@ -1,0 +1,113 @@
+.services-hero {
+  position: relative;
+  background: #0f0f0f;
+  /* primary black */
+  color: #fff;
+  padding: 180px 0 220px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.services-hero .hero2-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Wave Container */
+.hero-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Base wave shape using pseudo-element trick */
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 200%;
+  /* double width for smooth animation */
+  height: 200px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%230f0f0f" d="M0,160 C360,220 1080,100 1440,160 L1440,320 L0,320 Z"/></svg>') repeat-x;
+  background-size: cover;
+}
+
+/* Second wave */
+.wave2 {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%231a1a1a" fill-opacity="0.7" d="M0,180 C360,140 1080,240 1440,180 L1440,320 L0,320 Z"/></svg>') repeat-x;
+  opacity: 0.7;
+  bottom: 0px;
+  /* slight offset */
+}
+
+/* Animation */
+.wave1 {
+  animation: waveMove1 10s linear infinite;
+}
+
+.wave2 {
+  animation: waveMove2 15s linear infinite;
+}
+
+@keyframes waveMove1 {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes waveMove2 {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+.service-img {
+  width: 100%;
+  height: 400px;
+  /* Set a fixed height for all images */
+  object-fit: cover;
+  /* Ensures full coverage without distortion */
+  object-position: center;
+  /* Center the image */
+}
+
+.services-call-bg-box {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border-radius: 2rem;
+  /* extra-rounded corners */
+  background: url('../images/service/call-bg.jpg') center center / cover no-repeat;
+}
+
+/* Dark semi-transparent overlay */
+.services-call-bg-box .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* adjust opacity as needed */
+  z-index: 1;
+  border-radius: inherit;
+  /* same rounded corners */
+}
+
+/* Ensure text content stays above overlay */
+.services-call-bg-box .text-content {
+  position: relative;
+  z-index: 2;
+}

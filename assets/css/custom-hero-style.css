@@ -1,0 +1,342 @@
+        /* --- HERO SECTION --- */
+        .hero {
+          padding: 5px;
+          padding-top: 180px;
+          padding-bottom: 50px;
+          position: relative;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          overflow: hidden;
+          font-family: var(--ff-instrument-sans);
+          background: url('../images/home/modern-minimalist-office-black-white.jpg') center center / cover no-repeat;
+        }
+
+        /* ✅ Black overlay without breaking Quanto */
+        .hero__bg-overlay {
+          position: absolute;
+          inset: 0;
+          background: rgba(var(--color-black-rgb), 0.6);
+          /* 60% transparent black */
+          z-index: 0;
+        }
+
+        /* Floating Top-Left Image */
+        /* .floating-left-top {
+          position: fixed;
+          top: 20px;
+          left: 20px;
+          width: 180px;
+          z-index: 2;
+          pointer-events: none;
+          animation: floatY 4s ease-in-out infinite;
+        }*/
+
+        /* Desktop: fixed floating image */
+        .floating-left-top {
+          position: absolute;
+          top: 120px;
+          left: 60px;
+          width: 180px;
+          z-index: 2;
+          pointer-events: none;
+          animation: floatY 4s ease-in-out infinite;
+        }
+
+        /* Mobile: use absolute inside hero section */
+        @media (max-width: 768px) {
+          .floating-left-top {
+            position: absolute;
+            top: 7rem;
+            /* adjust spacing for small screens */
+            left: 1rem;
+            width: 120px;
+            animation: floatY 4s ease-in-out infinite;
+          }
+        }
+
+
+        .floating-left-top img {
+          width: 100%;
+          display: block;
+          border-radius: 1rem;
+          box-shadow: 0 15px 30px rgba(var(--color-black-rgb), 0.5);
+        }
+
+        @keyframes floatY {
+
+          0%,
+          100% {
+            transform: translateY(0);
+          }
+
+          50% {
+            transform: translateY(-15px);
+          }
+        }
+
+        /* Title */
+        .hero__title {
+          font-size: 75px;
+          line-height: 107.143%;
+          letter-spacing: -4.2px;
+          color: var(--color-white);
+          position: relative;
+          font-weight: 600;
+          z-index: 2;
+          text-shadow: 2px 2px 10px rgba(var(--color-black-rgb), 0.7);
+        }
+
+        @media only screen and (max-width: 1199.98px) {
+
+          .hero__title {
+            font-size: 70px;
+            letter-spacing: -3.2px;
+          }
+
+        }
+
+        @media only screen and (max-width: 991.98px) {
+          .hero__title {
+            font-size: 65px;
+            letter-spacing: -2.2px;
+          }
+
+        }
+
+        @media only screen and (max-width: 767.98px) {
+          .hero__title {
+            font-size: 60px;
+            letter-spacing: -1.2px;
+          }
+
+        }
+
+        @media only screen and (max-width: 560px) {
+          .hero__title {
+            font-size: 55px;
+            letter-spacing: -1.2px;
+          }
+        }
+
+        .hero__title .highlight {
+          color: rgba(var(--color-theme-red-rgb), 0.8);
+        }
+
+        .hero__title .transparent {
+          opacity: 0.9;
+          background: var(--color-theme-red);
+          color: #fff;
+          padding: 0 1rem;
+          border-radius: 2rem;
+        }
+
+        @keyframes ringPulse {
+          0% {
+            box-shadow:
+              0 0 10px rgba(var(--color-theme-red-rgb), 0.4),
+              0 0 20px rgba(var(--color-theme-red-rgb), 0.2);
+          }
+
+          50% {
+            box-shadow:
+              0 0 25px rgba(var(--color-theme-red-rgb), 0.8),
+              0 0 50px rgba(var(--color-theme-red-rgb), 0.5);
+          }
+
+          100% {
+            box-shadow:
+              0 0 10px rgba(var(--color-theme-red-rgb), 0.4),
+              0 0 20px rgba(var(--color-theme-red-rgb), 0.2);
+          }
+        }
+
+        .btn-rotating img {
+          width: 70%;
+          height: 70%;
+          border-radius: 50%;
+          animation: rotate-wheel 8s linear infinite;
+        }
+
+        @keyframes rotate-wheel {
+          0% {
+            transform: rotate(0deg);
+          }
+
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+
+        /* Anticlockwise keyframes */
+        @keyframes rotateAnticlockwise {
+          0% {
+            transform: rotate(0deg);
+          }
+
+          100% {
+            transform: rotate(-360deg);
+          }
+        }
+
+        /* On hover: image rotates anticlockwise */
+        .btn-rotating:hover img {
+          animation: rotateAnticlockwise 8s linear infinite;
+        }
+
+        .btn-rotating {
+          position: relative;
+          width: 160px;
+          height: 160px;
+          margin: 2rem auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 3px solid rgba(var(--color-theme-red-rgb), 0.7);
+          /* thinner, modern border */
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.05);
+          /* subtle frosted glass */
+          backdrop-filter: blur(10px);
+          /* soft blur behind */
+          box-shadow:
+            0 0 15px rgba(var(--color-theme-red-rgb), 0.4),
+            0 0 30px rgba(var(--color-theme-red-rgb), 0.2);
+          /* gentle glow */
+          animation: ringPulse 3s ease-in-out infinite;
+          z-index: 2;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          /* hover effect */
+        }
+
+        /* Hover effect for interactivity */
+        .btn-rotating:hover {
+          transform: scale(1.05);
+          box-shadow:
+            0 0 25px rgba(var(--color-theme-red-rgb), 0.6),
+            0 0 50px rgba(var(--color-theme-red-rgb), 0.3);
+        }
+
+        /* Rotating image inside the ring */
+        .btn-rotating img {
+          width: 70%;
+          height: 70%;
+          border-radius: 50%;
+          animation: rotate-wheel 8s linear infinite;
+        }
+
+        /* Glow pulse */
+        @keyframes ringPulse {
+          0% {
+            box-shadow:
+              0 0 15px rgba(var(--color-theme-red-rgb), 0.4),
+              0 0 30px rgba(var(--color-theme-red-rgb), 0.2);
+          }
+
+          50% {
+            box-shadow:
+              0 0 25px rgba(var(--color-theme-red-rgb), 0.6),
+              0 0 50px rgba(var(--color-theme-red-rgb), 0.3);
+          }
+
+          100% {
+            box-shadow:
+              0 0 15px rgba(var(--color-theme-red-rgb), 0.4),
+              0 0 30px rgba(var(--color-theme-red-rgb), 0.2);
+          }
+        }
+
+        /* Hero Manifest */
+        .hero__manifest {
+          font-size: 1.4rem;
+          color: var(--color-1);
+          margin-top: 1rem;
+          max-width: 500px;
+          text-shadow: 1px 1px 5px rgba(var(--color-black-rgb), 0.5);
+          position: relative;
+          z-index: 2;
+        }
+
+        /* Subtle Pulse */
+        .mxd-pulse {
+          animation: mxd-pulse 1.2s infinite ease-in-out alternate;
+        }
+
+        @keyframes mxd-pulse {
+          from {
+            transform: scale(0.94);
+          }
+
+          to {
+            transform: scale(1.06);
+          }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+
+
+          .hero__manifest {
+            font-size: 1.2rem;
+            max-width: 400px;
+          }
+
+          .btn-rotating {
+            width: 120px;
+            height: 120px;
+          }
+        }
+
+
+
+        /* === SIGNAL WAVE IMPULSE EFFECT === */
+        /* === Curved Sine Wave Style === */
+        .signal-wave {
+          position: absolute;
+          top: 50%;
+          width: 100px;
+          height: 40px;
+          overflow: hidden;
+          transform: translateY(-50%);
+          opacity: 0.8;
+          z-index: 3;
+        }
+
+        .signal-wave::before {
+          content: "";
+          position: absolute;
+          width: 200%;
+          height: 100%;
+          background: repeating-radial-gradient(circle at 0 50%,
+              rgba(var(--color-theme-red-rgb), 0.9) 0,
+              rgba(var(--color-theme-red-rgb), 0.6) 2px,
+              transparent 3px,
+              transparent 6px);
+          animation: sineWaveFlow 2.5s linear infinite;
+          filter: blur(0.6px);
+        }
+
+        .left-wave {
+          left: -100px;
+          transform: translateY(-50%) rotate(180deg);
+        }
+
+        .right-wave {
+          right: -100px;
+        }
+
+        @keyframes sineWaveFlow {
+          from {
+            transform: translateX(0);
+          }
+
+          to {
+            transform: translateX(-50%);
+          }
+        }
+
+
+        /*////////////////////////////////////////////////////////*/

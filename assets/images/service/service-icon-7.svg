@@ -1,0 +1,12 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="black">
+  <!-- Monitor -->
+  <rect x="8" y="10" width="48" height="32" rx="3" ry="3"></rect>
+  <rect x="24" y="44" width="16" height="4"></rect>
+  <rect x="20" y="50" width="24" height="2"></rect>
+  
+  <!-- Bar Chart (inside monitor) -->
+  <rect x="18" y="30" width="4" height="8"></rect>
+  <rect x="26" y="26" width="4" height="12"></rect>
+  <rect x="34" y="22" width="4" height="16"></rect>
+  <rect x="42" y="18" width="4" height="20"></rect>
+</svg>
