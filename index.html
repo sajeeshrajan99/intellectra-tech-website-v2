@@ -124,6 +124,10 @@
       font-size: 3rem;
     }
   }
+
+  .btn-spacing a:not(:last-child) {
+    margin-right: 20px;
+  }
 </style>
 
 <body>
@@ -485,33 +489,41 @@
                       <em class="hero-04-title__item">Re-defining Growth Through</em>
                     </span>
                     <span class="hero-04-title__row loading__item">
-                      <em class="hero-04-title__item title-item-image">
+                      <!--<em class="hero-04-title__item title-item-image">
                         <svg class="mxd-pulse" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 20 20">
                           <path
                             d="M19.6,9.6h-3.9c-.4,0-1.8-.2-1.8-.2-.6,0-1.1-.2-1.6-.6-.5-.3-.9-.8-1.2-1.2-.3-.4-.4-.9-.5-1.4,0,0,0-1.1-.2-1.5V.4c0-.2-.2-.4-.4-.4s-.4.2-.4.4v4.4c0,.4-.2,1.5-.2,1.5,0,.5-.2,1-.5,1.4-.3.5-.7.9-1.2,1.2s-1,.5-1.6.6c0,0-1.2,0-1.7.2H.4c-.2,0-.4.2-.4.4s.2.4.4.4h4.1c.4,0,1.7.2,1.7.2.6,0,1.1.2,1.6.6.4.3.8.7,1.1,1.1.3.5.5,1,.6,1.6,0,0,0,1.3.2,1.7v4.1c0,.2.2.4.4.4s.4-.2.4-.4v-4.1c0-.4.2-1.7.2-1.7,0-.6.2-1.1.6-1.6.3-.4.7-.8,1.1-1.1.5-.3,1-.5,1.6-.6,0,0,1.3,0,1.8-.2h3.9c.2,0,.4-.2.4-.4s-.2-.4-.4-.4h0Z" />
                         </svg>
-                      </em>
+                      </em>-->
                       <em class="hero-04-title__item">Digital Intelligence</em>
                     </span>
                   </h1>
                 </div>
                 <div class="mxd-hero-04__descr">
-                  <div class="mxd-paragraph__lists anim-uni-in-up mt-5">
+                  <div class="mxd-paragraph__lists anim-uni-in-up">
                     <div class="container-fluid p-0">
                       <div class="row g-0">
-                        <div class="col-12 col-xl-5 loading__item ">
-                          <a class="btn btn-anim btn-default btn-outline slide-right-up bg-color-primary shadow-lg"
-                            href="#">
-                            <span class="btn-caption text-white"> Get a Free Consultation</span>
-                            <i class="ph-bold ph-arrow-up-right text-white"></i>
-                          </a>
-                        </div>
-                        <div class="col-6 col-xl-5 loading__item d-none d-md-block">
-                          <a class="btn btn-anim btn-default btn-outline slide-right-up border-theme-red bg-red shadow-lg"
-                            href="#">
-                            <span class="btn-caption text-white"> Send a Message</span>
-                            <i class="ph-bold ph-arrow-up-right text-white"></i>
-                          </a>
+                        <div class="col-12  loading__item ">
+                          <div class="d-flex flex-wrap gap-3 d-none d-md-block mt-4 btn-spacing">
+                            <a class="btn btn-anim btn-default btn-outline slide-right-up bg-color-primary shadow-lg"
+                              href="#">
+                              <span class="btn-caption text-white">Get a Free Consultation</span>
+                              <i class="ph-bold ph-arrow-up-right text-white"></i>
+                            </a>
+
+                            <a class="btn btn-anim btn-default btn-outline slide-right-up border-theme-red bg-red shadow-lg"
+                              href="#">
+                              <span class="btn-caption text-white">Send a Message</span>
+                              <i class="ph-bold ph-arrow-up-right text-white"></i>
+                            </a>
+                          </div>
+                          <div class="d-flex flex-wrap  d-block d-md-none mt-2">
+                            <a class="btn btn-anim btn-default btn-outline slide-right-up bg-color-primary shadow-lg"
+                              href="#">
+                              <span class="btn-caption text-white">Get a Free Consultation</span>
+                              <i class="ph-bold ph-arrow-up-right text-white"></i>
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1082,12 +1094,8 @@
     </section>
     <!-- Section - Services/Features Stacking Cards End -->
 
-
-
-
-
     <!-- Section - Projects Pinned #01 Start -->
-    <div id="projects" class="mxd-section padding-pre-stack bg-color-white overflow-hidden">
+    <div id="projects" class="mxd-section padding-pre-stack bg-color-white ">
       <div class="mxd-container grid-container">
 
         <!-- Block - Projects Pinned #01 with Section Title Start -->
@@ -1493,7 +1501,7 @@
     <!-- Section - Testimonials Slider #01 End -->
 
     <!-- Section - Projects Pinned #01 Start -->
-    <div class="mxd-section padding-pre-stack section-padding-top bg-color-white overflow-hidden">
+    <div class="mxd-section padding-pre-stack section-padding-top bg-color-white">
       <div class="mxd-container grid-container">
 
         <!-- Block - Projects Pinned #01 with Section Title Start -->
