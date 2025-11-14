@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 
 <head>
   <!-- Basic Meta Tags -->
@@ -34,12 +36,17 @@
   <meta name="twitter:site" content="@intellectratech">
 
 
-  <!-- CSS Files -->
-  <!-- Plugins CSS -->
-  <link rel="stylesheet" href="assets/css/plugins.css" />
-  <!-- Main Style CSS -->
+  <!-- Template Styles Start -->
+  <link rel="stylesheet" type="text/css" href="assets/css/loaders/loader.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/plugins.min.css">
   <link rel="stylesheet" href="assets/css/style.css?v=2" />
-  <link rel="stylesheet" href="assets/css/custom-style.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/main.min.css">
+  <link rel="stylesheet" href="assets/css/custom-style.css?v=2" />
+  <!-- font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Template Styles End -->
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6BBD7F50RC"></script>
   <script>
@@ -69,45 +76,56 @@
   </script>
 </head>
 
+<style>
+  .about-hero-section {
+    background-image: url('assets/images/about/about-image-hero1.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 140px 0;
+    color: #fff;
+    overflow: hidden;
+  }
+
+  /* Optional dark overlay for text visibility */
+  .about-hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(14, 13, 13, 0.08);
+    z-index: 1;
+  }
+
+  /* Ensure hero text appears above overlay */
+  .about-hero-content {
+    position: relative;
+    z-index: 2;
+  }
+</style>
+
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P86QP5BW" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <!-- Custom Cursor -->
+  <!-- Header Start -->
+  <header id="header" class="mxd-header d-none">
+    <!-- header controls -->
+    <div class="mxd-header__controls loading__fade">
+      <button id="color-switcher" type="button" role="switch" aria-label="light/dark mode" aria-checked="true"></button>
 
-  <div class="cursor d-none d-lg-block"></div>
-
-  <!-- Custom Cursor End -->
-
-  <!-- Preloader -->
-
-  <!--<div class="preloader">
-    <div class="spinner-wrap">
-      <div class="preloader-logo">
-        <img src="assets/images/preloader.svg" alt="" class="img-fluid" />
-      </div>
-      <div class="spinner"></div>
     </div>
-  </div>-->
-
-  <!-- Preloader End ggg-->
-
-  <!-- back to to button start-->
-  <a href="#" id="scroll-top" class="back-to-top-btn"><i class="fa-solid fa-arrow-up"></i></a>
-  <!-- back to to button end-->
+  </header>
+  <!-- Header End -->
 
   <!-- Mobile Menu -->
-  <div class="quanto-menu-wrapper">
+  <div class="quanto-menu-wrapper overflow-hidden">
     <div class="quanto-menu-area text-center">
       <div class="quanto-menu-mobile-top">
         <div class="mobile-logo">
           <a href="../">
-            <img src="./assets/images/intellectra-tech-logo-2.webp" alt="logo" loading="lazy" />
+            <img src="./assets/images/intellectra-tech-logo-2.webp" alt="logo" loading="lazy" class="pl-2" />
           </a>
         </div>
-        <button class="quanto-menu-toggle mobile" aria-label="Toggle menu">
-          <i class="ri-close-line"></i>
+        <button class="quanto-menu-toggle mobile " aria-label="Toggle menu">
+          <i class="fas fa-times"></i>
         </button>
       </div>
       <div class="quanto-mobile-menu">
@@ -166,12 +184,13 @@
           <h6>Liverpool, L15 0EG</h6>
         </div>
         <div class="sidebar-wrap">
-          <h6>UK: <a href="tel:+447342145338">+44 7342 145338 </a></h6>
-          <h6>India: <a href="tel:+919497880332">+919497880332 </a></h6>
+          <h6>UK: <a href="tel:+447342145338" class="text-black">+44 7342 145338 </a></h6>
+          <h6>India: <a href="tel:+919497880332" class="text-black">+919497880332 </a></h6>
           <h6>
             <a href="mailto:enquiry@intellectratech.com">enquiry@intellectratech.com</a>
           </h6>
         </div>
+
         <div class="social-btn style3">
           <a href="https://www.facebook.com/profile.php?id=61576946785639">
             <span class="link-effect">
@@ -211,7 +230,7 @@
 
   <div class="has-smooth" id="has_smooth"></div>
   <div id="smooth-wrapper">
-    <header class="quanto-header main-header bg-color-white" id="sticky-menu">
+    <header class="quanto-header main-header bg-color-primary overflow-hidden" style="position: relative;">
       <div class="sticky-wrap">
         <div class="sticky-active">
           <div class="container custom-container">
@@ -219,7 +238,7 @@
               <div class="col-8 col-sm-auto">
                 <div class="header-logo">
                   <a href="../">
-                    <img src="./assets/images/intellectra-tech-logo-1.webp" alt="logo" />
+                    <img src="./assets/images/intellectra-tech-logo-2-white.webp" alt="logo" />
                   </a>
                 </div>
               </div>
@@ -227,7 +246,7 @@
                 <nav class="main-menu menu-style1 d-none d-lg-block">
                   <ul>
                     <li>
-                      <a href="../">Home </a>
+                      <a href="../">Home</a>
                     </li>
                     <li>
                       <a href="about">About Us</a>
@@ -282,1017 +301,897 @@
                 </button>
               </div>
               <div class="col-auto d-none d-lg-block">
-                <a class="quanto-link-btn btn-pill" href="./contact">Get in touch
-                  <span>
-                    <i class="fa-solid fa-arrow-right arry1"></i>
-                    <i class="fa-solid fa-arrow-right arry2"></i>
-                  </span>
+                <a class="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right-up bg-color-primary border-white text-white"
+                  href="contact.html">
+                  <span class="btn-caption">Say Hello</span>
+                  <i class="ph-bold ph-arrow-up-right text-white"></i>
                 </a>
+                <!-- <a class="quanto-link-btn btn-pill" href="./contact">Get in touch -->
+
               </div>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <div id="smooth-content">
+  </div>
+  <!-- Page Content Start -->
+  <!-- Page Content Start -->
+  <main id="mxd-page-content" class="mxd-page-content">
 
+    <!-- Section - Inner Page Headline Start -->
+    <div class="mxd-section mxd-section-inner-headline  about-hero-section">
+      <div class="mxd-container grid-container">
 
-      <div class="hero-service-wrapper position-relative">
-        <!-- Hero Section -->
-        <section class="quanto-hero4-section quanto-aboutus overflow-hidden section-padding-bottom"
-          data-bg-src="assets/images/about/about-image-hero1.webp">
-          <div class="container custom-container">
-            <div class="row g-4 justify-content-between align-items-end">
-              <div class="col-md-9 col-xl-9 position-relative">
-                <div class="quanto-hero4__content">
-                  <h1 class="title">
-                    Your Trusted Digital Growth Partner. Built on a foundation of expertise, transparency, and shared
-                    ambition.
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <!-- Block - Inner Page Headline Start -->
+        <div class="mxd-block loading-wrap">
+          <div class="container-fluid px-0">
+            <div class="row gx-0">
 
-        <!-- Marquee section Start -->
-        <section class="marquee-section  bg-color-primary">
-          <div class="marquee-container fade-anim">
-            <div class="marquee">
-              <div class="marquee-item-container">
+              <!-- Inner Headline Name Start -->
+              <div class="col-12 col-xl-12 ">
+                <div class=" loading__item">
+                  <div class="breadcrumb-nav" aria-label="breadcrumb">
 
-                <!-- Marquee Line 1 -->
-                <div class="marquee-item">
-                  <h2 class="text-uppercase fw-semibold d-inline-flex align-items-center flex-wrap gap-3 text-white">
-                    Logo Design
-                    <svg viewBox="0 0 80 80" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="30"
-                      height="30">
-                      <path d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8
-                c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4
-                c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0
-                C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4
-                c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6
-                s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4
-                c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4z">
-                      </path>
-                    </svg>
-                    Graphic Design
-                    <svg viewBox="0 0 80 80" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="30"
-                      height="30">
-                      <path d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8
-                c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4
-                c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0
-                C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4
-                c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6
-                s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4
-                c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4z">
-                      </path>
-                    </svg>
-                    SEO
-                    <svg viewBox="0 0 80 80" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="30"
-                      height="30">
-                      <path d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8
-                c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4
-                c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0
-                C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4
-                c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6
-                s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4
-                c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4z">
-                      </path>
-                    </svg>
-                    Social Media Marketing
-                    <svg viewBox="0 0 80 80" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="30"
-                      height="30">
-                      <path d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8
-                c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4
-                c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0
-                C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4
-                c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6
-                s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4
-                c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4z">
-                      </path>
-                    </svg>
-                    Content Marketing
-                    <svg viewBox="0 0 80 80" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="30"
-                      height="30">
-                      <path d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8
-                c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4
-                c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0
-                C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4
-                c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6
-                s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4
-                c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4z">
-                      </path>
-                    </svg>
-                    Performance Marketing
-                    <svg viewBox="0 0 80 80" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="30"
-                      height="30">
-                      <path d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8
-                c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4
-                c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0
-                C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4
-                c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6
-                s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4
-                c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4z">
-                      </path>
-                    </svg>
-                    Google Ads
-                    <svg viewBox="0 0 80 80" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="30"
-                      height="30">
-                      <path d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8
-                c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4
-                c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0
-                C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4
-                c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6
-                s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4
-                c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4z">
-                      </path>
-                    </svg>
-                    Web Development
-                    <svg viewBox="0 0 80 80" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="30"
-                      height="30">
-                      <path d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8
-                c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4
-                c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0
-                C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4
-                c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6
-                s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4
-                c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4z">
-                      </path>
-                    </svg>
-                    Mobile Apps
-                    <svg viewBox="0 0 80 80" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="30"
-                      height="30">
-                      <path d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8
-                c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4
-                c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0
-                C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4
-                c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6
-                s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4
-                c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4z">
-                      </path>
-                    </svg>
-                    E-Commerce
-                    </h1>
-                </div>
+                    <a href="../" class="breadcrumb-link">Home</a>
+                    <span class="breadcrumb-separator">
+                      <i class="ph ph-caret-right"></i> <!-- arrow icon -->
+                    </span>
+                    <span class="breadcrumb-current text-red">About Us</span>
 
-
-
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Service Details section Start -->
-        <section id="quanto-service-details-section"
-          class="quanto-service-details-section bg-color-2 row-padding-top row-padding-bottom overflow-hidden">
-          <div class="container custom-container">
-            <div class="row g-4 ">
-              <div class="row g-4  position-relative justify-content-center">
-                <div class="col-lg-9 justify-content-center">
-                  <div class="quanto-service-details__content">
-                    <div class="service-benefits mb-5">
-                      <h1 class="fade-anim text_invert">About Our Digital Marketing Company in the UK</h1>
-                      <p class="move-anim">
-                        Intellectra is more than just a digital marketing company UK; we are your dedicated growth
-                        partner. We were founded on the belief that smart, data-driven strategy and completely
-                        transparent
-                        execution are the only paths to sustainable online success. We help businesses cut through the
-                        noise with measurable, high-impact campaigns across all digital channels.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-2 justify-content-center d-none d-lg-block">
-                  <!-- Modern Floating Trusted Partner Ring Badge -->
-                  <div class="trusted-partner-badge-modern">
-                    <div class="ring-gradient">
-                      <span class="ring-text">8+ Years<br>of Growth</span>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-
-
-            </div>
-          </div>
-
-          <!-- Video section Start -->
-          <div class="quanto-video-area style-2 overflow-hidden">
-            <div class="container custom-container">
-              <div class="row">
-                <div class="col-12">
-                  <!-- Video wrapper with rounded border -->
-                  <div class="video-wrapper rounded-video">
-                    <video muted autoplay loop src="assets/images/test-image/3209211-uhd_3840_2160_25fps.mp4"
-                      class="quanto-video d-block w-100" data-speed="0.8" id="quanto-video-2"></video>
-                    <button class="play-btn">Play</button>
                   </div>
                 </div>
               </div>
+              <!-- Inner Headline Name End -->
+
+              <!-- Inner Headline Name Start -->
+              <div class="col-12 col-xl-2  no-margin"></div>
+              <!-- Inner Headline Content Start -->
+              <div class="col-12 col-xl-10 mxd-grid-item no-margin">
+
+                <div class="mxd-block__content">
+                  <div class="mxd-block__inner-headline">
+                    <h2 class="inner-headline__title headline-img-before  loading__item hero_h1">Your Trusted Digital
+                      Growth Partner. Built on a foundation of expertise, transparency, and shared ambition.</h2>
+                    <!-- <p class="inner-headline__text t-large t-bright">Subscriptions for continuous creative 
+                        support or bundled projects to build or elevate your brand. We've got a package 
+                        that fits!</p> -->
+                  </div>
+                </div>
+
+              </div>
+              <!-- Inner Headline Content End -->
+
             </div>
           </div>
-          <!-- Video section End -->
-        </section>
+        </div>
+        <!-- Block - Inner Page Headline End -->
+
       </div>
+    </div>
+
+    <!-- Section - About Start -->
+    <div class="mxd-section padding-default section-padding-top-bottom bg-color-white">
+      <div class="mxd-container grid-container">
+
+        <!-- Block - About Description with H2 Title and Paragraph Start -->
+        <div class="mxd-block">
+          <div class="container-fluid px-0">
+            <div class="row gx-0">
+              <div class="col-12 col-xl-5 mxd-grid-item no-margin">
+                <div class="mxd-block__name text-black">
+                  <h1 class="reveal-type anim-uni-in-up">About Our Digital Marketing Company in the UK</h1>
+                </div>
+              </div>
+              <div class="col-12 col-xl-6 mxd-grid-item no-margin">
+                <div class="mxd-block__content">
+                  <div class="mxd-block__paragraph">
+                    <p class="t-large t-bright anim-uni-in-up">Intellectra is more than just a digital marketing company
+                      UK; we are your dedicated growth partner. We were founded on the belief that smart, data-driven
+                      strategy and completely transparent execution are the only paths to sustainable online success. We
+                      help businesses cut through the noise with measurable, high-impact campaigns across all digital
+                      channels.</p>
+                    <div class="mxd-paragraph__lists">
+                      <div class="container-fluid p-0">
+                        <div class="row g-0">
 
 
-      <div class="marquee-container bg-color-2" style="background-color:#fff;">
-        <div class="marquee">
-          <a class="marquee-item-container" href="https://wa.me/447342145338">
-            <div class="marquee-item text-color-white">
-              <h2 class="text-color-dark">Let’s work together</h2>
-              <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150" fill="none">
-                <path
-                  d="M100.023 58.8388L46.232 112.63L37.3932 103.791L91.1844 50H43.7733V37.5H112.523V106.25H100.023V58.8388Z"
-                  fill="black"></path>
-              </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mxd-paragraph__controls anim-uni-in-up">
+                      <a class="btn btn-anim btn-default btn-outline slide-right-up bg-color-primary border-black"
+                        href="">
+                        <span class="btn-caption text-white">Get a Free Consultation</span>
+                        <i class="ph-bold ph-arrow-up-right text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </a>
-          <a class="marquee-item-container" href="https://wa.me/447342145338">
-            <div class="marquee-item text-color-white">
-              <h2 class="text-color-dark">Let’s work together</h2>
-              <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150" fill="none">
-                <path
-                  d="M100.023 58.8388L46.232 112.63L37.3932 103.791L91.1844 50H43.7733V37.5H112.523V106.25H100.023V58.8388Z"
-                  fill="black"></path>
-              </svg>
+          </div>
+        </div>
+        <!-- Block - About Description with H2 Title and Paragraph End -->
+
+      </div>
+    </div>
+    <!-- Section - About End -->
+    <!-- Growth Section Start -->
+    <section class="mxd-section padding-stacked-section overflow-hidden">
+      <div class="mxd-container grid-container" style="position: relative;">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-12 col-md-11 col-lg-11">
+            <!-- Inner Box -->
+            <div class="bg-color-primary radius-l p-3 p-md-5 text-center"
+              style="position: relative; overflow: hidden; z-index: 1;">
+
+              <!-- Decorative Image (left-bottom, behind content) -->
+              <!--<img src="assets/images/home/02_hero-img.webp" alt="Decorative Image" class="img-fluid"
+                style="position: absolute; bottom: 10px; left: 10px; width: 350px; max-width: 40%; opacity: 1; pointer-events: none; z-index: 0;">-->
+
+
+              <!--<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+                      background: rgba(0,0,0,0.4); z-index: 1;"></div>-->
+
+              <!-- TEXT CONTENT -->
+              <div style="">
+                <h2 class="anim-uni-in-up text-white mb-5 pt-4 pt-md-5 mt-3">
+                  Our Mission & Vision
+                </h2>
+                <div class="row">
+                  <div class="col-md-2"></div>
+                  <div class="col-md-8">
+                    <p class="mb-4 anim-uni-in-up text-white">
+                      We are guided by a simple, powerful purpose:
+                    </p>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-center flex-wrap gap-3 anim-uni-in-up pb-4 pb-md-4 mt-5 mb-5">
+
+                  <div class="col-12 col-xl-5 mxd-services-cards__item mxd-grid-item anim-uni-scale-in-right">
+                    <div class="mxd-services-cards__inner justify-end bg-color-white radius-l padding-5x4">
+
+                      <div class="mxd-services-cards__title">
+                        <h3 class="text-black anim-uni-in-up">Our Mission</h3>
+                      </div>
+                      <div class="mxd-services-cards__info">
+                        <div class=" mxd-services-cards-image-4 mb-5">
+                          <img src="assets/images/about/about-mission.webp" alt="mission" class="w-100 img_reveal"
+                            style="border-radius: 20px;" loading="lazy" />
+                        </div>
+                        <p class="text-black anim-uni-in-up">To deliver predictable, high-impact Digital Marketing
+                          Services that convert our clients' digital budgets into maximum return on investment (ROI).
+                        </p>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-xl-5 mxd-services-cards__item mxd-grid-item anim-uni-scale-in-right">
+                    <div class="mxd-services-cards__inner justify-end bg-red radius-l padding-5x4">
+
+                      <div class="mxd-services-cards__title">
+                        <h3 class="text-white anim-uni-in-up">Our Vision</h3>
+                      </div>
+                      <div class="mxd-services-cards__info">
+                        <div class=" mxd-services-cards-image-4 mb-5">
+                          <img src="assets/images/about/about-vision.webp" alt="vision" class="w-100 img_reveal"
+                            style="border-radius: 20px;" loading="lazy" />
+                        </div>
+                        <p class="text-white anim-uni-in-up">To be recognized globally as the most reliable and
+                          results-focused digital marketing company, setting the standard for transparency,
+                          accountability, and digital intelligence.
+                        </p>
+                      </div>
+
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+
             </div>
-          </a><a class="marquee-item-container" href="https://wa.me/447342145338">
-            <div class="marquee-item text-color-white">
-              <h2 class="text-color-dark">Let’s work together</h2>
-              <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150" fill="none">
-                <path
-                  d="M100.023 58.8388L46.232 112.63L37.3932 103.791L91.1844 50H43.7733V37.5H112.523V106.25H100.023V58.8388Z"
-                  fill="black"></path>
-              </svg>
-            </div>
-          </a><a class="marquee-item-container" href="https://wa.me/447342145338">
-            <div class="marquee-item text-color-white">
-              <h2 class="text-color-dark">Let’s work together</h2>
-              <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150" fill="none">
-                <path
-                  d="M100.023 58.8388L46.232 112.63L37.3932 103.791L91.1844 50H43.7733V37.5H112.523V106.25H100.023V58.8388Z"
-                  fill="black"></path>
-              </svg>
-            </div>
-          </a><a class="marquee-item-container" href="https://wa.me/447342145338">
-            <div class="marquee-item text-color-white">
-              <h2 class="text-color-dark">Let’s work together</h2>
-              <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150" fill="none">
-                <path
-                  d="M100.023 58.8388L46.232 112.63L37.3932 103.791L91.1844 50H43.7733V37.5H112.523V106.25H100.023V58.8388Z"
-                  fill="black"></path>
-              </svg>
-            </div>
-          </a><a class="marquee-item-container" href="https://wa.me/447342145338">
-            <div class="marquee-item text-color-white">
-              <h2 class="text-color-dark">Let’s work together</h2>
-              <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150" fill="none">
-                <path
-                  d="M100.023 58.8388L46.232 112.63L37.3932 103.791L91.1844 50H43.7733V37.5H112.523V106.25H100.023V58.8388Z"
-                  fill="black"></path>
-              </svg>
-            </div>
-          </a>
+            <!-- End Inner Box -->
+          </div>
         </div>
       </div>
+    </section>
+    <!-- Growth Section End -->
 
 
+    <!-- Section - Services/Features Stacking Cards Start -->
+    <section class="mxd-section section-padding-bottom bg-color-white overflow-hidden">
+      <div class="mxd-container grid-container">
 
-
-      <!-- Project section Start -->
-      <section class="quanto-project-section bg-color-white section-padding-bottom">
-        <div
-          class="container custom-container bg-color-primary row-padding-top row-padding-bottom text-white extra-rounded">
+        <!-- Section Heading -->
+        <div class="mxd-block mxd-grid-item text-center no-margin mb-5">
+          <h2 class="mxd-heading reveal-type anim-uni-scale-in-left">
+            Our Journey &amp; Milestones
+          </h2>
           <div class="row">
-            <div class="col-12 fade-anim">
-              <h2 class="text-center text-white">
-                Our Mission & Vision
-              </h2>
-              <p class="text-center mt-4 mb-4">
-                We are guided by a simple, powerful purpose:
+            <div class="col-md-2"></div>
+            <div class="col-12 col-md-8">
+              <p class="mxd-subheading mt-5 anim-uni-in-up text-dark">
+                For over 8 years, Intellectra has been shaping the digital success stories of ambitious businesses
+                across the UK and globally. Our journey is built on continuous learning, expert certification, and a
+                strong commitment to client success.
               </p>
             </div>
           </div>
 
-          <div class="row align-items-center justify-content-center">
-            <div class="col-md-1 col-lg-1 col-xl-1 col-xxl-1"></div>
-            <div class="col-md-10 col-lg-10 col-xl-10 col-xxl-10 ">
-              <div class=" quanto-project-gard-row">
+        </div>
 
-                <!-- Mission Box -->
-                <div class="quanto-project-box2 overflow-hidden fade-anim">
-                  <div class="quanto-project-thumb order-0 order-md-1" style="border-radius: 20px; overflow: hidden;">
-                    <img src="assets/images/about/about-mission.webp" alt="mission" class="w-100 img_reveal"
-                      style="border-radius: 20px;" loading="lazy" />
+
+        <!-- Block - Statistics Cards Start -->
+        <div class="mxd-block">
+          <div class="mxd-stats-cards">
+            <div class="container-fluid px-0">
+              <div class="row gx-0">
+
+                <div class="col-12 col-xl-4  mxd-grid-item anim-uni-scale-in-left text-center">
+                  <div class=" bg-color-primary radius-m padding-4 ">
+                    <div class="mxd-counter">
+                      <p id="stats-counter-3" class="mxd-counter__number mxd-stats-number t-bright text-white">0</p>
+                      <p class=" t-140 t-bright text-white">Years Driving Digital Excellence</p>
+                    </div>
                   </div>
-                  <div class="quanto-project-content order-1 order-md-0">
-                    <div class="top-content">
-                      <h3 class="text-color-primary line-clamp-1  text-white">Our Mission</h3>
-                      <p class="">
-                        To deliver predictable, high-impact Digital Marketing Services that convert our clients' digital
-                        budgets into maximum return on investment (ROI).
+                </div>
+
+                <div class="col-12 col-xl-4  mxd-grid-item anim-uni-scale-in-left text-center ">
+                  <div class="bg-color-primary radius-m padding-4 ">
+                    <div class="mxd-counter">
+                      <p id="stats-counter-4" class="mxd-counter__number mxd-stats-number t-bright text-white">0</p>
+                      <p class=" t-140 t-bright text-white">Successful Project Launches</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-xl-4  mxd-grid-item anim-uni-scale-in-left text-center">
+                  <div class=" bg-color-primary radius-m padding-4">
+                    <div class="mxd-counter text-center">
+                      <p id="stats-counter-2" class="mxd-counter__number mxd-stats-number t-bright text-white">0</p>
+                      <p class=" t-140 t-bright text-white text-cente">Client
+                        Retention &
+                        Satisfaction</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Block - Statistics Cards End -->
+
+
+      </div>
+    </section>
+    <!-- Section - Services/Features Stacking Cards End -->
+
+
+    <!-- Section - About Start -->
+    <div class="mxd-section padding-pre-grid bg-color-light section-padding-top-bottom">
+      <div class="mxd-container grid-container">
+
+        <!-- Block - About Description with H2 Title and Paragraph Start -->
+        <div class="mxd-block">
+          <div class="container-fluid px-0">
+            <div class="row gx-0">
+              <div class="col-12 col-xl-4 mxd-grid-item no-margin">
+                <div class="mxd-block__name">
+                  <h2 class="anim-uni-in-up text-black">Meet the Team</h2>
+                </div>
+              </div>
+              <div class="col-12 col-xl-7 mxd-grid-item no-margin">
+                <div class="mxd-block__content">
+                  <div class="mxd-block__paragraph">
+                    <p class="t-large text-black anim-uni-in-up reveal-type">Our success rests entirely on the expertise
+                      and passion
+                      of our people. We are a passionate, multidisciplinary team of strategists, developers, and
+                      creators - all Google-Certified Experts.
+                    </p>
+                    <p class="t-large text-black anim-uni-in-up reveal-type">We believe in collaborative success,
+                      ensuring
+                      every member works
+                      dedicatedly on your project. When you partner with us, you get a full team of specialists
+                      dedicated to achieving your specific goals.</p>
+                    <div class="mxd-paragraph__controls anim-uni-in-up">
+                      <a class="btn btn-anim btn-default btn-outline slide-right-up text-black border-black" href="#">
+                        <span class="btn-caption">Meet Our Experts </span>
+                        <i class="ph-bold ph-arrow-up-right"></i>
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Block - About Description with H2 Title and Paragraph End -->
+
+      </div>
+      <!-- bottom part -->
+      <div class="mxd-hero-03__bottom row-padding-top">
+        <div class="mxd-container">
+          <!-- video divider -->
+          <div class="mxd-divider">
+            <div class="mxd-divider__video">
+              <video class="video parallax-video" preload="auto" autoplay="autoplay" loop="loop" muted="muted"
+                poster="assets/images/about/welcome.mp4">
+                <source type="video/mp4" src="assets/images/about/welcome.mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section - About End -->
+
+
+    <!-- Section - About Start -->
+    <div class="mxd-section padding-pre-grid bg-color-primary section-padding-top-bottom text-white">
+      <div class="mxd-container grid-l-container">
+
+        <!-- Block - About Description with Manifest Start -->
+        <div class="mxd-block">
+          <div class="container-fluid px-0">
+            <div class="row gx-0">
+              <div class="col-12 col-xl-6 mxd-grid-item-l no-margin anim-uni-in-up">
+                <div class="mxd-block__image">
+                  <img src="assets/images/web-desing/web-image1.jpg" alt="Photo">
+                </div>
+              </div>
+              <div class="col-12 col-xl-6 mxd-grid-item-l no-margin">
+                <div class="mxd-block__content content-flex">
+                  <div class="mxd-block__manifest">
+                    <h2 class="anim-uni-in-up text-white reveal-type">
+                      Why Work With UK-Based Digital Marketing Companies Like Us?
+                    </h2>
+                    <p class=" reveal-type text-white mt-5">Choosing UK-based digital marketing companies
+                      ensures you get localized market knowledge combined with global expertise, offering you several
+                      key advantages:</p>
+
+                  </div>
+
+                  <div class="mxd-links-lines">
+                    <!-- item -->
+                    <div class="mxd-links-lines__item">
+                      <div class="mxd-links-lines__divider anim-uni-in-up bg-color-light"></div>
+                      <div class=" anim-uni-in-up mt-5 mb-5">
+                        <h5 class="mxd-links-lines__title text-white">Local Insight, Global Reach</h5>
+                        <p class="text-white mt-5 ">We understand the nuances of the UK market while scaling your
+                          business
+                          globally.</p>
+                      </div>
+                      <div class="mxd-links-lines__divider anim-uni-in-up bg-color-light"></div>
+                    </div>
+                    <!-- item -->
+                    <div class="mxd-links-lines__item">
+                      <div class="mxd-links-lines__divider anim-uni-in-up bg-color-light"></div>
+                      <div class=" anim-uni-in-up mt-5 mb-5">
+                        <h5 class="mxd-links-lines__title text-white">Real-Time Support</h5>
+                        <p class="text-white mt-5 ">Get clear, timely communication and support in your time zone.</p>
+                      </div>
+                      <div class="mxd-links-lines__divider anim-uni-in-up bg-color-light"></div>
+                    </div>
+                    <!-- item -->
+
+                    <div class="mxd-links-lines__item">
+                      <div class="mxd-links-lines__divider anim-uni-in-up bg-color-light"></div>
+                      <div class=" anim-uni-in-up mt-5 mb-5">
+                        <h5 class="mxd-links-lines__title text-white">Accountable Partnership</h5>
+                        <p class="text-white mt-5 ">Our commitment to 100% transparent communication means our goals
+                          are always aligned with yours.</p>
+                      </div>
+                      <div class="mxd-links-lines__divider anim-uni-in-up bg-color-light"></div>
+                    </div>
+                  </div>
+                  <div class="mt-5">
+                    <h6 class="text-white">Ready to see how our expertise can accelerate your business?</h6>
+                    <div class="mxd-manifest__controls d-none d-md-block">
+                      <a class="btn btn-anim btn-default btn-outline slide-right-up anim-uni-in-up bg-color-white border-white"
+                        href="services">
+                        <span class="btn-caption text-dark">Explore Our Digital Marketing Services</span>
+                        <i class="ph-bold ph-arrow-up-right text-dark"></i>
+                      </a>
+                    </div>
+                    <div class="mxd-manifest__controls d-block d-md-none">
+                      <a class="btn btn-anim btn-default btn-outline slide-right-up anim-uni-in-up bg-color-white border-white"
+                        href="services">
+                        <span class="btn-caption text-dark">Explore Our Services</span>
+                        <i class="ph-bold ph-arrow-up-right text-dark"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Block - About Description with Manifest End -->
+
+
+      </div>
+    </div>
+    <!-- Section - About End -->
+
+
+
+    <!-- Section - Projects Pinned #01 Start -->
+    <div class="mxd-section padding-pre-stack section-padding-top bg-color-white">
+      <div class="mxd-container grid-container">
+
+        <!-- Block - Projects Pinned #01 with Section Title Start -->
+        <div class="mxd-block">
+          <div class="mxd-pinned-projects">
+            <div class="container-fluid px-0">
+              <div class="row gx-0">
+                <div class="col-12 col-xl-5 mxd-pinned-projects__static">
+                  <div class="mxd-pinned-projects__static-inner no-margin">
+
+                    <!-- Section Title Start -->
+                    <div class="mxd-section-title no-margin-desktop">
+                      <div class="container-fluid p-0">
+                        <div class="row g-0">
+                          <div class="col-12 mxd-grid-item no-margin">
+                            <div class="mxd-section-title__title anim-uni-in-up">
+                              <h2 class="reveal-type">Frequently Asked Questions (FAQ)</h2>
+                            </div>
+                          </div>
+
+                          <div class="col-12 mxd-grid-item no-margin">
+                            <div class="mxd-section-title__controls anim-uni-in-up">
+                              <a class="btn btn-anim btn-default btn-outline slide-right-up border-black" href="">
+                                <span class="btn-caption text-black">All FAQ</span>
+                                <i class="ph-bold ph-arrow-up-right text-black"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Section Title End -->
+
+                  </div>
+                </div>
+
+                <div class="col-12 col-xl-7 mxd-pinned-projects__scroll">
+                  <div class="mxd-pinned-projects__scroll-inner mxd-grid-item no-margin">
+                    <div class="mxd-project-item">
+                      <div class="mxd-block__content">
+                        <div class="mxd-accordion loading__fade">
+
+                          <!-- FAQ 1 -->
+                          <div class="mxd-accordion__item">
+                            <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                            <div class="mxd-accordion__title anim-uni-in-up">
+                              <h6>What digital marketing services do you offer?</h6>
+                              <div class="mxd-accordion__arrow">
+                                <i class="ph ph-plus text-black"></i>
+                              </div>
+                            </div>
+                            <div class="mxd-accordion__content">
+                              <p class="mxd-accordion__text text-black">
+                                We provide a complete suite of Digital Marketing Services, including SEO, Google Ads
+                                (PPC),
+                                Social Media Marketing (SMM), Content Marketing, Branding, Web & App Development,
+                                and Custom
+                                Solutions — all designed to drive measurable growth.
+                              </p>
+                            </div>
+                            <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                          </div>
+
+                          <!-- FAQ 2 -->
+                          <div class="mxd-accordion__item">
+                            <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                            <div class="mxd-accordion__title anim-uni-in-up">
+                              <h6>Where are your services available?</h6>
+                              <div class="mxd-accordion__arrow">
+                                <i class="ph ph-plus text-black"></i>
+                              </div>
+                            </div>
+                            <div class="mxd-accordion__content">
+                              <p class="mxd-accordion__text text-black">
+                                We’re based in the UK and work with clients nationwide. We also serve international
+                                businesses looking to expand their reach in UK and global markets through digital
+                                channels.
+                              </p>
+                            </div>
+                            <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                          </div>
+
+                          <!-- FAQ 3 -->
+                          <div class="mxd-accordion__item">
+                            <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                            <div class="mxd-accordion__title anim-uni-in-up">
+                              <h6>How much should I budget to start working with Intellectra?</h6>
+                              <div class="mxd-accordion__arrow">
+                                <i class="ph ph-plus text-black"></i>
+                              </div>
+                            </div>
+                            <div class="mxd-accordion__content">
+                              <p class="mxd-accordion__text text-black">
+                                Our pricing is flexible and depends entirely on your goals and the services you
+                                need. After
+                                a free consultation, we’ll create a custom solution plan that fits your budget —
+                                whether
+                                you’re a small startup or a large company.
+                              </p>
+                            </div>
+                            <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                          </div>
+
+                          <!-- FAQ 4 -->
+                          <div class="mxd-accordion__item">
+                            <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                            <div class="mxd-accordion__title anim-uni-in-up">
+                              <h6>Do you guarantee specific search rankings or immediate results?</h6>
+                              <div class="mxd-accordion__arrow">
+                                <i class="ph ph-plus text-black"></i>
+                              </div>
+                            </div>
+                            <div class="mxd-accordion__content">
+                              <p class="mxd-accordion__text text-black">
+                                No, ethical agencies cannot guarantee exact SEO rankings or immediate traffic.
+                                However, we
+                                guarantee proven, data-driven strategies and transparent reporting that aim for the
+                                maximum
+                                possible growth for your investment.
+                              </p>
+                            </div>
+                            <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                          </div>
+
+                          <!-- FAQ 5 -->
+                          <div class="mxd-accordion__item">
+                            <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                            <div class="mxd-accordion__title anim-uni-in-up">
+                              <h6>How long will it take to see results?</h6>
+                              <div class="mxd-accordion__arrow">
+                                <i class="ph ph-plus text-black"></i>
+                              </div>
+                            </div>
+                            <div class="mxd-accordion__content">
+                              <p class="mxd-accordion__text text-black">
+                                Results depend on your chosen service and goals. Paid Ads can deliver leads within
+                                days,
+                                while SEO and organic strategies usually take 3–6 months. We ensure both short-term
+                                wins and
+                                long-term growth.
+                              </p>
+                            </div>
+                            <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                          </div>
+
+                          <!-- FAQ 6 -->
+                          <div class="mxd-accordion__item">
+                            <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                            <div class="mxd-accordion__title anim-uni-in-up">
+                              <h6>Can you help if I already have a website or marketing team?</h6>
+                              <div class="mxd-accordion__arrow">
+                                <i class="ph ph-plus text-black"></i>
+                              </div>
+                            </div>
+                            <div class="mxd-accordion__content">
+                              <p class="mxd-accordion__text text-black">
+                                Yes. We collaborate with your existing team or improve your current setup. Whether
+                                you need
+                                a website revamp, SEO optimization, or campaign management, we can enhance what you
+                                already
+                                have — without disrupting ongoing work.
+                              </p>
+                            </div>
+                            <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                          </div>
+
+                          <!-- FAQ 7 -->
+                          <div class="mxd-accordion__item">
+                            <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                            <div class="mxd-accordion__title anim-uni-in-up">
+                              <h6>How will I track my campaign’s progress?</h6>
+                              <div class="mxd-accordion__arrow">
+                                <i class="ph ph-plus text-black"></i>
+                              </div>
+                            </div>
+                            <div class="mxd-accordion__content">
+                              <p class="mxd-accordion__text text-black">
+                                You’ll have full visibility through performance dashboards, weekly updates, and
+                                monthly
+                                reports. We track key metrics like traffic, conversions, ROI, and engagement — all
+                                shared in
+                                real time for complete transparency.
+                              </p>
+                            </div>
+                            <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                          </div>
+
+                          <!-- FAQ 8 -->
+                          <div class="mxd-accordion__item">
+                            <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                            <div class="mxd-accordion__title anim-uni-in-up">
+                              <h6>What if I need to upgrade or modify my plan?</h6>
+                              <div class="mxd-accordion__arrow">
+                                <i class="ph ph-plus text-black"></i>
+                              </div>
+                            </div>
+                            <div class="mxd-accordion__content">
+                              <p class="mxd-accordion__text text-black">
+                                No problem. Our packages are flexible, and you can scale or modify your plan anytime
+                                with
+                                prior notice. We adapt to your business pace — not the other way around.
+                              </p>
+                            </div>
+                            <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Block - Projects Pinned #01 with Section Title End -->
+
+      </div>
+    </div>
+    <!-- Section - Projects Pinned #01 End -->
+
+
+    <!-- Section - CTA Start -->
+    <div class="mxd-section overflow-hidden bg-color-white section-padding-top overflow-hidden">
+      <div class="mxd-container">
+
+        <!-- Block - CTA Start -->
+        <div class="mxd-block">
+          <div class="mxd-promo">
+            <div class="mxd-promo__inner anim-zoom-out-container bg-color-primary">
+              <!-- background -->
+              <div class="bg-color-primary"></div>
+
+              <!-- caption -->
+              <div class="mxd-promo__content">
+                <p class="mxd-promo__title anim-uni-in-up">
+
+                  <span class="mxd-promo__caption reveal-type" style="color: white;">Let’s Grow Together</span>
+                </p>
+                <div class="mxd-promo__text anim-uni-in-up ">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <p class="text-white">
+                        Whether you’re scaling a startup or optimizing a global brand, Intellectra Tech is here to make
+                        your digital journey smarter and stronger.
                       </p>
                     </div>
                   </div>
+
                 </div>
 
-                <!-- Vision Box -->
-                <div class="quanto-project-box2 overflow-hidden fade-anim">
-                  <div class="quanto-project-thumb order-0 order-md-1" style="border-radius: 20px; overflow: hidden;">
-                    <img src="assets/images/about/about-vision.webp" alt="vision" class="w-100 img_reveal"
-                      style="border-radius: 20px;" loading="lazy" />
-                  </div>
-                  <div class="quanto-project-content order-1 order-md-0">
-                    <div class="top-content">
-                      <h3 class="text-color-primary line-clamp-1  text-white">Our Vision</h3>
-                      <p class="">
-                        To be recognized globally as the most reliable and results-focused digital marketing company,
-                        setting
-                        the standard for transparency, accountability, and digital intelligence.
-                      </p>
-                    </div>
+                <!-- two CTAs -->
+                <div class="mxd-promo__controls anim-uni-in-up d-none d-md-block">
+                  <a class="btn btn-anim btn-default  bg-red  border-red-light slide-right-up shadow-lg "
+                    href="contact.html">
+                    <span class="btn-caption text-white">Book a Free Consultation</span>
+                    <i class="ph-bold ph-arrow-up-right"></i>
+                  </a>
+                  <div class="mt-5">
+                    <a class="btn btn-anim btn-default bg-red  border-red-light slide-right-up shadow-lg"
+                      href="services.html">
+                      <span class="btn-caption text-white">Talk to Our Team Today</span>
+                      <i class="ph-bold ph-arrow-up-right"></i>
+                    </a>
                   </div>
                 </div>
+                <div class="mxd-promo__controls anim-uni-in-up d-block d-md-none">
+                  <a class="btn btn-anim btn-default  bg-red  border-red-light slide-right-up shadow-lg "
+                    href="contact.html">
+                    <span class="btn-caption text-white">Book a Free Consultation</span>
+                    <i class="ph-bold ph-arrow-up-right"></i>
+                  </a>
+                  <div class="mt-5">
+                    <a class="btn btn-anim btn-default bg-red  border-red-light slide-right-up shadow-lg"
+                      href="services.html">
+                      <span class="btn-caption text-white">Talk to Our Team Today</span>
+                      <i class="ph-bold ph-arrow-up-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
 
+              <!-- parallax images -->
+              <div class="mxd-promo__images">
+                <img class="promo-image promo-image-1" src="assets/img/illustrations/cta-img-01.webp" alt="Image">
+                <img class="promo-image promo-image-2" src="assets/img/illustrations/cta-img-02.webp" alt="Image">
               </div>
             </div>
-            <div class="col-md-1 col-lg-1 col-xl-1 col-xxl-1"></div>
           </div>
+        </div>
+        <!-- Block - CTA End -->
 
-          <div class="row row-padding-top fade-anim">
-            <div class="col-12 text-center">
-              <a class="quanto-link-btn btn-pill border-theme-red" href="contact">
-                Contact Us
-                <span>
-                  <i class="fa-solid fa-arrow-right arry1"></i>
-                  <i class="fa-solid fa-arrow-right arry2"></i>
-                </span>
+      </div>
+    </div>
+    <!-- Section - CTA End -->
+
+
+  </main>
+  <!-- Page Content End -->
+
+  <!-- Footer Start -->
+  <footer id="mxd-footer" class="mxd-footer overflow-hidden bg-color-white">
+
+    <!-- Footer Block - Fullwidth Text Start -->
+    <div class=" mxd-footer__text-wrap d-3 d-none">
+      <div class="fullwidth-text__tl-trigger"></div>
+      <div class="mxd-footer__fullwidth-text anim-top-to-bottom">
+        <h2 class="text-black">Let’s work together</h2>
+      </div>
+    </div>
+    <!-- Footer Block - Fullwidth Text End -->
+
+
+    <!-- Footer Block - Info Columns End -->
+
+  </footer>
+  <!-- Footer End -->
+  <!-- Footer section End -->
+  <footer class="footer-area bg-color-primary p-3 ">
+
+    <div class="footer__center section-padding-top-bottom">
+      <div class="container custom-container">
+
+        <div class="row g-4 justify-content-between">
+          <div class="col-sm-5 col-lg-4">
+            <div class="footer-widgets quanto text-color-white anim-uni-in-up">
+              <a href="../" class="logo d-inline-block">
+                <img src="./assets/images/intellectra-tech-logo-2-white.webp" alt="Intellectra" />
               </a>
+              <p class="text-white">
+                We are the leading digital marketing company in the UK,
+                offering the most reliable and effective
+                services to drive the growth of your business..
+              </p>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- Project section End -->
+          <div class="col-sm-5 col-lg-3">
+            <div class="footer-widgets anim-uni-in-up">
 
-
-      <!-- Journey & Milestones Section Start -->
-      <section class="quanto-journey-section bg-color-2 text-white section-padding-top-bottom overflow-hidden">
-        <div class="container custom-container">
-          <div class="row align-items-center justify-content-center g-4">
-
-            <!-- Left Content -->
-            <div class="col-lg-6 col-md-12">
-              <div class="quanto-section-title fade-anim">
-                <h2 class="text_invert">Our Journey &amp; Milestones</h2>
-                <p class="move-anim mt-3 mb-4 text-dark">
-                  For over 8 years, <strong>Intellectra</strong> has been shaping the digital success stories of
-                  ambitious
-                  businesses across the UK and globally. Our journey is built on continuous learning, expert
-                  certification,
-                  and a strong commitment to client success.
-                </p>
+              <div class="widget-links on-laptop">
+                <h6 class="widget-title text-color-white">Links</h6>
+                <ul class="custom-ul">
+                  <li class="inline-links">
+                    <a href="../">Home</a> <span style="padding-left: 3px; padding-right: 3px;">|</span>
+                    <a href="about">About Us</a>
+                  </li>
+                  <li><a href="graphic-design">Graphic Design</a></li>
+                  <li><a href="web-development">Web Development</a></li>
+                  <li><a href="mobile-app-development">Mobile App Development</a></li>
+                  <li>
+                    <a href="seo">SEO</a>
+                    <span style="padding-left: 3px; padding-right: 3px;">|</span>
+                    <a href="careers">Careers</a>
+                    <span style="padding-left: 3px; padding-right: 3px;">|</span>
+                    <a href="contact">Contact</a>
+                  </li>
+                </ul>
               </div>
-            </div>
 
-            <!-- Right Stats / Highlights -->
-            <div class="col-lg-6 col-md-12">
-              <div class="quanto-service-list">
-
-                <!-- Point 1 -->
-                <div class="quanto-service-box move-anim rounded-4 mb-2">
-                  <div class="quanto-service-icon">
-                    <i class="fa-solid fa-award"></i>
-                  </div>
-                  <div class="quanto-service-content">
-                    <h4 class="text_invert">8+ Years Driving Digital Excellence</h4>
-                    <p class="text_invert">Experience that ensures stability and knowledge.</p>
-                  </div>
-                </div>
-
-                <!-- Point 2 -->
-                <div class="quanto-service-box move-anim rounded-4 mb-2">
-                  <div class="quanto-service-icon">
-                    <i class="fa-solid fa-rocket"></i>
-                  </div>
-                  <div class="quanto-service-content">
-                    <h4 class="text_invert">15+ Successful Project Launches</h4>
-                    <p class="text_invert">A history of delivering tangible results.</p>
-                  </div>
-                </div>
-
-                <!-- Point 3 -->
-                <div class="quanto-service-box move-anim rounded-4 mb-2">
-                  <div class="quanto-service-icon">
-                    <i class="fa-solid fa-handshake"></i>
-                  </div>
-                  <div class="quanto-service-content">
-                    <h4 class="text_invert">90% Client Retention &amp; Satisfaction</h4>
-                    <p class="text_invert">Proof of trust and long-term partnership.</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-      <!-- Journey & Milestones Section End -->
-
-
-      <!-- Meet the Team Section Start -->
-      <section
-        class="quanto-team-section bg-color-primary section-padding-top-bottom overflow-hidden position-relative">
-        <div class="container custom-container">
-          <div class="row align-items-center g-4">
-
-            <!-- Right Side: Content first for variation -->
-            <div class="col-lg-6 col-md-12 order-lg-1">
-              <div class="quanto-section-title fade-anim text-white">
-                <h2 class="text-white">Meet the Team</h2>
-                <p class="move-anim mt-3 mb-3">
-                  Our success rests entirely on the expertise and passion of our people. We are a passionate,
-                  multidisciplinary team of strategists, developers, and creators - all Google-Certified
-                  Experts.
-                </p>
-                <p class="move-anim mb-4">
-                  We believe in collaborative success, ensuring every member works dedicatedly on your project. When you
-                  partner with us, you get a full team of specialists dedicated to achieving your specific goals.
-                </p>
-
-
-              </div>
-            </div>
-
-            <!-- Left Side: Image with floating effect -->
-            <div class="col-lg-6 col-md-12 order-lg-0 position-relative">
-              <div class="quanto-image reveal-anim text-center">
-                <img src="assets/images/home/modern-minimalist-office-black-white.jpg" alt="Meet the Team"
-                  class="w-100 rounded-4 img_reveal" loading="lazy">
-                <!-- Optional floating effect using theme animation class -->
-                <div class="floating-circle position-absolute top-50 start-50 translate-middle">
-                  <a href="team" class="quanto-link-btn btn-pill border-theme-red text-white d-inline-block mt-3">
-                    Meet Our Experts
-                    <span>
-                      <i class="fa-solid fa-arrow-right arry1"></i>
-                      <i class="fa-solid fa-arrow-right arry2"></i>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-      <!-- Meet the Team Section End -->
-
-
-
-
-      <section class="quanto-team-section section-padding-top-bottom overflow-hidden bg-light">
-        <div class="container">
-
-          <!-- Section Header -->
-          <div class="text-center mb-5">
-            <h2 class="display-5 fw-bold">Why Work With UK-Based Digital Marketing Companies?</h2>
-            <p class="lead text-muted">
-              Get localized UK market knowledge combined with global expertise. Here are the key advantages:
-            </p>
-          </div>
-
-          <!-- Feature Cards -->
-          <div class="row g-4 justify-content-center">
-
-            <!-- Feature 1 -->
-            <div class="col-md-4">
-              <div class="card h-100 text-center border-0 shadow-sm p-4 extra-rounded">
-                <div class="mb-3">
-                  <i class="bi bi-globe2 fs-1 text-danger"></i>
-                </div>
-                <h5 class="fw-semibold mb-2">Local Insight, Global Reach</h5>
-                <p class="text-muted mb-0">We understand the nuances of the UK market while scaling your business
-                  globally.</p>
-              </div>
-            </div>
-
-            <!-- Feature 2 -->
-            <div class="col-md-4">
-              <div class="card h-100 text-center border-0 shadow-sm p-4 extra-rounded">
-                <div class="mb-3">
-                  <i class="bi bi-clock fs-1 text-danger"></i>
-                </div>
-                <h5 class="fw-semibold mb-2">Real-Time Support</h5>
-                <p class="text-muted mb-0">Get clear, timely communication and support in your time zone.</p>
-              </div>
-            </div>
-
-            <!-- Feature 3 -->
-            <div class="col-md-4">
-              <div class="card h-100 text-center border-0 shadow-sm p-4 extra-rounded">
-                <div class="mb-3">
-                  <i class="bi bi-hand-thumbs-up fs-1 text-danger"></i>
-                </div>
-                <h5 class="fw-semibold mb-2">Accountable Partnership</h5>
-                <p class="text-muted mb-0">Our commitment to 100% transparent communication ensures our goals are always
-                  aligned with yours.</p>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- Call to Action -->
-          <div class="text-center mt-5">
-            <p class="mb-3">Ready to see how our expertise can accelerate your business?</p>
-            <a href="team" class="quanto-link-btn btn-pill text-white d-inline-block mt-3">
-              Explore Our Digital Marketing Services
-              <span>
-                <i class="fa-solid fa-arrow-right arry1"></i>
-                <i class="fa-solid fa-arrow-right arry2"></i>
-              </span>
-            </a>
-
-          </div>
-
-        </div>
-      </section>
-
-      <!-- FAQ section End -->
-      <section id="quanto-faq-area" class="quanto-faq-area section-padding-top-bottom bg-color-white">
-        <div class="container custom-container">
-          <div class="row g-4 justify-content-between align-items-center">
-
-            <!-- Left Column: Heading -->
-            <div class="col-lg-6 col-xl-5 col-xxl-4 d-flex align-items-center"
-              style="position: sticky; top: 100px; align-self: center; height: 100%;">
-              <div class="quanto__header text-start" style="width: 100%;">
-                <h2 class="title fade-anim mb-0">
-                  Frequently Asked Questions
-                </h2>
-              </div>
-            </div>
-
-            <!-- Right Column: Accordion (scrolls smoothly, scrollbar hidden) -->
-            <div class="col-lg-6 col-xl-7 col-xxl-7" style="
-             max-height: 80vh;
-             overflow-y: scroll;
-             padding-right: 10px;
-             scrollbar-width: none;          /* Firefox */
-             -ms-overflow-style: none;        /* IE/Edge */
-           " onscroll="this.style.scrollbarWidth='none'">
-
-              <div class="accordion quanto-faq-accordion" id="accordionExample">
-
-                <!-- Q1 -->
-                <div class="accordion-item fade-anim">
-                  <h6 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      What digital marketing services do you offer?
-                    </button>
-                  </h6>
-                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      We provide a complete suite of Digital Marketing Services, including SEO, Google Ads (PPC), Social
-                      Media Marketing (SMM), Content Marketing, Branding, Web & App Development, and Custom Solutions,
-                      all designed to drive measurable growth.
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Q2 -->
-                <div class="accordion-item fade-anim">
-                  <h6 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Where are your services available?
-                    </button>
-                  </h6>
-                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      We’re based in the UK and work with clients across the country. We also serve international
-                      businesses looking to expand their reach in UK and global markets through digital channels.
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Q3 -->
-                <div class="accordion-item fade-anim">
-                  <h6 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      How much should I budget to start working with Intellectra?
-                    </button>
-                  </h6>
-                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      Our pricing is flexible and depends entirely on your specific goals and the services needed. After
-                      a free consultation, we create a custom solution plan that fits your budget, whether you’re a
-                      small startup or a large company.
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Q4 -->
-                <div class="accordion-item fade-anim">
-                  <h6 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                      Do you guarantee specific search rankings or immediate results?
-                    </button>
-                  </h6>
-                  <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      No, ethical agencies cannot guarantee exact SEO rankings or immediate traffic. We do guarantee we
-                      will use proven, data-driven strategies and transparent reporting to aim for the maximum possible
-                      growth for your investment.
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Q5 -->
-                <div class="accordion-item fade-anim">
-                  <h6 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                      How long will it take to see results?
-                    </button>
-                  </h6>
-                  <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      Results depend on your chosen service and goals. Paid Ads can deliver leads within days, while SEO
-                      and organic growth strategies usually take 3-6 months. We ensure both short-term wins and
-                      long-term sustainability.
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Q6 -->
-                <div class="accordion-item fade-anim">
-                  <h6 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                      Can you help if I already have a website or marketing team?
-                    </button>
-                  </h6>
-                  <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      Yes. We collaborate with your existing team or improve your current setup. Whether you need a
-                      website revamp, SEO optimization, or campaign management, we can enhance what you already have,
-                      without disrupting ongoing work.
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Q7 -->
-                <div class="accordion-item fade-anim">
-                  <h6 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                      How will I track my campaign’s progress?
-                    </button>
-                  </h6>
-                  <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      You’ll have full visibility through performance dashboards, weekly updates, and monthly reports.
-                      We track metrics like traffic, conversions, ROI, and engagement, all shared in real time for
-                      complete transparency.
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Q8 -->
-                <div class="accordion-item fade-anim">
-                  <h6 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                      What if I need to upgrade, or modify my plan?
-                    </button>
-                  </h6>
-                  <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      No problem. Our packages are flexible and you can scale, or modify your plan anytime with prior
-                      notice. We adapt to your business pace, not the other way around.
-                    </div>
-                  </div>
-                </div>
-
-              </div>
             </div>
           </div>
-        </div>
-      </section>
+          <div class="col-sm-5 col-lg-4">
+            <div class="footer-widgets  text-color-white anim-uni-in-up">
+              <h6 class="widget-title text-color-white">Contact</h6>
+              <p class="address text-white">
+                32A, Lawrence Road, Liverpool, L15 0EG
+              </p>
+              <div class="contacts">
+                <ul class="custom-ul">
+                  <li>
+                    <a class="email" href="mailto:enquiry@intellectratech.com">enquiry@intellectratech.com</a>
+                  </li>
+                  <li class="mt-2">
+                    <a class="mobile" href="tel:+447342145338">+44 7342 145338</a>
+                  </li>
+                  <li class="mt-2">
+                    <a class="mobile" href="tel:+91 9497 8 80332">+91 9497 8 80332</a>
+                  </li>
+                </ul>
 
-      <!-- Project section Start -->
-      <section class="quanto-project-section section-padding-top-bottom overflow-hidden bg-color-2">
-        <div class=" custom-container">
-          <div class="row">
-            <div class="col-12">
-              <div class="quanto__header text-center">
-                <h2 class="title move-anim">Our Services</h2>
               </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="project-horizontal-scrolling horizontal-scroll">
-                <div class="quanto-project-box scroll-item overflow-hidden">
-                  <a href="#">
-                    <div class="quanto-project-thumb overflow-hidden">
-                      <img src="./assets/images/project/project-2-1.png" alt="project-thumb"
-                        class="w-100 img_reveal rounded-4" />
-                    </div>
-                  </a>
-                  <div class="quanto-project-content">
-                    <h5 class="line-clamp-1">
-                      <a href="#"> Search Engine Optimization</a>
-                    </h5>
-
-                  </div>
-                </div>
-                <div class="quanto-project-box scroll-item overflow-hidden">
-                  <a href="#">
-                    <div class="quanto-project-thumb overflow-hidden">
-                      <img src="./assets/images/project/project-2-3.png" alt="project-thumb"
-                        class="w-100 img_reveal  rounded-4" />
-                    </div>
-                  </a>
-                  <div class="quanto-project-content">
-                    <h5 class="line-clamp-1">
-                      <a href="#">Web Development</a>
-                    </h5>
-
-
-                  </div>
-                </div>
-                <div class="quanto-project-box scroll-item overflow-hidden">
-                  <a href="#">
-                    <div class="quanto-project-thumb overflow-hidden">
-                      <img src="./assets/images/project/project-2-3.png" alt="project-thumb  rounded-4"
-                        class="w-100 img_reveal  rounded-4" />
-                    </div>
-                  </a>
-                  <div class="quanto-project-content">
-                    <h5 class="line-clamp-1">
-                      <a href="#">E-Commerce </a>
-                    </h5>
-
-
-                  </div>
-                </div>
-                <div class="quanto-project-box scroll-item overflow-hidden">
-                  <a href="#">
-                    <div class="quanto-project-thumb overflow-hidden">
-                      <img src="./assets/images/project/project-2-4.png" alt="project-thumb"
-                        class="w-100 img_reveal  rounded-4" />
-                    </div>
-                  </a>
-                  <div class="quanto-project-content">
-                    <h5 class="line-clamp-1">
-                      <a href="#">Custom Solutions</a>
-                    </h5>
-
-
-                  </div>
-                </div>
-                <div class="quanto-project-box scroll-item overflow-hidden">
-                  <a href="#">
-                    <div class="quanto-project-thumb overflow-hidden">
-                      <img src="./assets/images/project/project-2-5.png" alt="project-thumb"
-                        class="w-100 img_reveal  rounded-4" />
-                    </div>
-                  </a>
-                  <div class="quanto-project-content">
-                    <h5 class="line-clamp-1">
-                      <a href="#">Google Ads</a>
-                    </h5>
-
-
-                  </div>
-                </div>
-                <div class="quanto-project-box scroll-item overflow-hidden">
-                  <a href="#">
-                    <div class="quanto-project-thumb overflow-hidden">
-                      <img src="./assets/images/project/project-2-6.png" alt="project-thumb"
-                        class="w-100 img_reveal  rounded-4" />
-                    </div>
-                  </a>
-                  <div class="quanto-project-content">
-                    <h5 class="line-clamp-1">
-                      <a href="#">Social Media Marketing</a>
-                    </h5>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row row-padding-top">
-            <div class="coll-12 text-center">
-              <a class="quanto-link-btn btn-pill" href="services">
-                View All Services
-                <span>
-                  <i class="fa-solid fa-arrow-right arry1"></i>
-                  <i class="fa-solid fa-arrow-right arry2"></i>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Project section end -->
-
-      <!-- Footer section Start -->
-      <footer class="footer-area bg-color-light">
-        <div class="footer__center section-padding-bottom">
-          <div class="container custom-container">
-            <div class="row justify-content-center text-center">
-              <div class="col-xl-10">
-                <div class="footer__center-content style-2 move-anim ">
-                  <a href="#header" class="scroll-to-top section-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180" fill="none">
-                      <path
-                        d="M97.5004 58.7132V150H82.5004V58.7132L42.2707 98.943L31.6641 88.3365L90.0004 30L148.337 88.3365L137.73 98.943L97.5004 58.7132Z"
-                        fill="#0F0F0F" />
-                    </svg>
-                  </a>
-                  <h2 class="mb-3">
-                    Let’s Grow Together
-                  </h2>
-                  <p class="mb-4  col-xl-8 offset-lg-2">Whether you’re scaling a startup or optimizing a global brand,
-                    Intellectra Tech is here to make your digital journey smarter and stronger.</p>
-                  <a class="quanto-link-btn btn-pill" href="contact">Book a Free Consultation
-                    <span>
-                      <i class="fa-solid fa-arrow-right arry1"></i>
-                      <i class="fa-solid fa-arrow-right arry2"></i>
-                    </span>
-                  </a>
-                  <a class="quanto-link-btn btn-pill " href="contact">Talk to Our Team Today
-                    <span>
-                      <i class="fa-solid fa-arrow-right arry1"></i>
-                      <i class="fa-solid fa-arrow-right arry2"></i>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <footer class="footer-area bg-color-primary">
-        <div class="footer__center section-padding-top-bottom">
-          <div class="container custom-container">
-
-            <div class="row g-4 justify-content-between">
-              <div class="col-sm-5 col-lg-4">
-                <div class="footer-widgets quanto text-color-white fade-anim">
-                  <a href="../" class="logo d-inline-block">
-                    <img src="./assets/images/intellectra-tech-logo-2-white.png" alt="Intellectra" />
-                  </a>
-                  <p>
-                    We are the leading digital marketing company in the UK,
-                    offering the most reliable and effective
-                    services to drive the growth of your business..
-                  </p>
-                </div>
-              </div>
-              <div class="col-sm-5 col-lg-3">
-                <div class="footer-widgets fade-anim">
-
-                  <div class="widget-links on-laptop">
-                    <h6 class="widget-title text-color-white">Links</h6>
-                    <ul class="custom-ul">
-                      <li class="inline-links">
-                        <a href="../">Home</a> <span style="padding-left: 3px; padding-right: 3px;">|</span>
-                        <a href="about">About Us</a>
-                      </li>
-                      <li><a href="graphic-design">Graphic Design</a></li>
-                      <li><a href="web-development">Web Development</a></li>
-                      <li><a href="mobile-app-development">Mobile App Development</a></li>
-                      <li>
-                        <a href="seo">SEO</a>
-                        <span style="padding-left: 3px; padding-right: 3px;">|</span>
-                        <a href="careers">Careers</a>
-                        <span style="padding-left: 3px; padding-right: 3px;">|</span>
-                        <a href="contact">Contact</a>
-                      </li>
-                    </ul>
-                  </div>
-
-                </div>
-              </div>
-              <div class="col-sm-5 col-lg-4">
-                <div class="footer-widgets  text-color-white fade-anim">
-                  <h6 class="widget-title text-color-white">Contact</h6>
-                  <p class="address">
-                    32A, Lawrence Road, Liverpool, L15 0EG
-                  </p>
-                  <div class="contacts">
-                    <ul class="custom-ul">
-                      <li>
-                        <a class="email" href="mailto:enquiry@intellectratech.com">enquiry@intellectratech.com</a>
-                      </li>
-                      <li class="mt-2">
-                        <a class="mobile" href="tel:+447342145338">+44 7342 145338</a>
-                      </li>
-                    </ul>
-
-                  </div>
-                  <div class="social-links mt-3">
-                    <ul class="custom-ul">
-                      <li>
-                        <a href="https://www.facebook.com/profile.php?id=61576946785639" target="_blank"
-                          rel="noopener noreferrer" aria-label="Visit our Facebook page">
-                          <i class="fab fa-facebook-f"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://wa.me/447342145338" target="_blank" rel="noopener noreferrer"
-                          aria-label="Chat with us on WhatsApp">
-                          <i class="fab fa-whatsapp"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com/intellectra_tech" target="_blank" rel="noopener noreferrer"
-                          aria-label="Follow us on Instagram">
-                          <i class="fab fa-instagram"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.linkedin.com/company/intellectra-tech/" target="_blank"
-                          rel="noopener noreferrer" aria-label="Connect with us on LinkedIn">
-                          <i class="fab fa-linkedin-in"></i>
-                        </a>
-                      </li>
-                      <!----<li>
-                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"
+              <div class="social-links mt-3">
+                <ul class="custom-ul">
+                  <li>
+                    <a href="https://www.facebook.com/profile.php?id=61576946785639" target="_blank"
+                      rel="noopener noreferrer" aria-label="Visit our Facebook page">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://wa.me/447342145338" target="_blank" rel="noopener noreferrer"
+                      aria-label="Chat with us on WhatsApp">
+                      <i class="fab fa-whatsapp"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/intellectra_tech" target="_blank" rel="noopener noreferrer"
+                      aria-label="Follow us on Instagram">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/company/intellectra-tech/" target="_blank"
+                      rel="noopener noreferrer" aria-label="Connect with us on LinkedIn">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                  <!----<li>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" 
                           aria-label="Visit our YouTube channel">
                           <i class="fab fa-youtube"></i>
                         </a>
                       </li>-->
-                    </ul>
-                  </div>
+                </ul>
+              </div>
 
-                </div>
-              </div>
             </div>
           </div>
         </div>
-        <div class="footer__bottom has-bodder">
-          <div class="container custom-container p-xxl-0 overflow-hidden">
-            <div class="row">
-              <div class="col-12">
-                <div class="footer__bottom-content row-padding-bottom">
-                  <div class="copyright-text text-color-white">
-                    All Rights Reserved — 2025 &copy; Intellectra Tech. &nbsp;
-                    <div class="d-block"></div>
-                    <a href="terms-and-conditions">Terms&nbsp;&&nbsp;Conditions</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
-                      href="privacy-policy">Privacy&nbsp;Policy</a>
-                  </div>
-                  <a href="#header" class="scroll-to-top section-link">
-                    Back to top
-                    <i class="fas fa-angle-up"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <!-- Footer section End -->
+      </div>
     </div>
-  </div>
+    <div class="footer__bottom has-bodder">
+      <div class="container custom-container p-xxl-0 overflow-hidden">
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="footer__bottom-content row-padding-bottom d-flex justify-content-between align-items-center flex-wrap">
 
-  <!-- Jquery JS -->
+              <div class="copyright-text text-color-white">
+                © 2025 Intellectra Tech. All Rights Reserved. &nbsp;&nbsp
+
+                <a href="terms-and-conditions">Terms&nbsp;&amp;&nbsp;Conditions</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="privacy-policy">Privacy&nbsp;Policy</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- To Top Button Start -->
+  <a href="#0" id="to-top" class="btn btn-round btn-to-top slide-up anim-no-delay">
+    <i class="ph ph-arrow-up"></i>
+  </a>
+  <!-- To Top Button End -->
+
+  <!-- Load Scripts Start -->
+  <script src="assets/js/libs.min.js"></script>
+  <script src="assets/js/app.min.js"></script>
+  <!-- Load Scripts End -->
   <script src="assets/js/jquery-3.7.1.min.js"></script>
-  <!-- Bootstrap JS -->
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <!-- MixItUp JS -->
-  <script src="assets/js/jquery.mixitup.min.js"></script>
-  <!-- Swiper Carousel JS -->
-  <script src="assets/js/swiper-bundle.min.js"></script>
-  <!-- Magnific Popup JS -->
-  <script src="assets/js/jquery.magnific-popup.min.js"></script>
-  <!-- Odometer JS -->
-  <script src="assets/js/odometer.min.js"></script>
-  <script src="assets/js/viewport.jquery.js"></script>
-
-  <!-- gsap JS -->
-  <script src="assets/js/gsap.js"></script>
-  <script src="assets/js/gsap-scroll-smoother.js"></script>
-  <script src="assets/js/gsap-scroll-to-plugin.js"></script>
-  <script src="assets/js/gsap-scroll-trigger.js"></script>
-  <script src="assets/js/gsap-split-text.js"></script>
-
-  <!-- Menu JS -->
   <script src="assets/js/menu.js"></script>
+  <!-- counters -->
+  <script>
+    const statsCounter1 = new countUp.CountUp("stats-counter-1", 15, optionsPlus);
+    const statsCounter2 = new countUp.CountUp("stats-counter-2", 90, optionsPercent);
+    const statsCounter3 = new countUp.CountUp("stats-counter-3", 8, optionsPlus);
+    const statsCounter4 = new countUp.CountUp("stats-counter-4", 15, optionsPlus);
+    statsCounter1.start();
+    statsCounter2.start();
+    statsCounter3.start();
+    statsCounter4.start();
 
-  <!-- Main JS -->
-  <script src="assets/js/main.js"></script>
-
+  </script>
 </body>
 
 </html>

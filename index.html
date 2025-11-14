@@ -38,8 +38,8 @@
   <!-- Template Styles Start -->
   <link rel="stylesheet" type="text/css" href="assets/css/loaders/loader.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/plugins.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/main.min.css">
   <link rel="stylesheet" href="assets/css/style.css?v=2" />
+  <link rel="stylesheet" type="text/css" href="assets/css/main.min.css">
   <link rel="stylesheet" href="assets/css/custom-style.css?v=2" />
   <!-- font -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
@@ -47,13 +47,6 @@
 
   <!-- Template Styles End -->
 
-  <!-- Custom Browser Color Start -->
-  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FAF7F6">
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#161616">
-  <meta name="msapplication-navbutton-color" content="#161616">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <!-- Custom Browser Color End -->
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6BBD7F50RC"></script>
   <script>
@@ -88,13 +81,20 @@
     color: white;
   }
 
-  .mxd-heading .sub-text {
+  @media only screen and (max-width:768px) {
+
+    h3 {
+
+      letter-spacing: 1rem;
+    }
+  }
+
+  /* .mxd-heading .sub-text {
     display: block;
     margin-top: 5px;
     font-size: 0.85em;
     letter-spacing: 0.5px;
     color: rgba(19, 18, 18, 0.7);
-    /* good for dark backgrounds */
   }
 
   @media (max-width: 786px) {
@@ -103,9 +103,9 @@
       padding: 15px 0px !important;
       padding-left: 15px !important;
     }
-  }
+  }*/
 
-  @media (max-width: 489px) {
+  /*@media (max-width: 489px) {
     .header-logo {
       max-width: 200px;
       padding: 15px 0px !important;
@@ -123,7 +123,7 @@
     h3 {
       font-size: 3rem;
     }
-  }
+  }*/
 
   .btn-spacing a:not(:last-child) {
     margin-right: 20px;
@@ -327,7 +327,7 @@
                 </button>
               </div>
               <div class="col-auto d-none d-lg-block">
-                <a class="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right-up bg-color-primary border-white"
+                <a class="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right-up bg-color-primary border-white text-white"
                   href="contact.html">
                   <span class="btn-caption">Say Hello</span>
                   <i class="ph-bold ph-arrow-up-right"></i>
@@ -484,20 +484,9 @@
 
                   </div>
                   <!-- title text -->
-                  <h1 class="hero-04-title">
-                    <span class="hero-04-title__row loading__item">
-                      <em class="hero-04-title__item">Re-defining Growth Through</em>
-                    </span>
-                    <span class="hero-04-title__row loading__item">
-                      <!--<em class="hero-04-title__item title-item-image">
-                        <svg class="mxd-pulse" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 20 20">
-                          <path
-                            d="M19.6,9.6h-3.9c-.4,0-1.8-.2-1.8-.2-.6,0-1.1-.2-1.6-.6-.5-.3-.9-.8-1.2-1.2-.3-.4-.4-.9-.5-1.4,0,0,0-1.1-.2-1.5V.4c0-.2-.2-.4-.4-.4s-.4.2-.4.4v4.4c0,.4-.2,1.5-.2,1.5,0,.5-.2,1-.5,1.4-.3.5-.7.9-1.2,1.2s-1,.5-1.6.6c0,0-1.2,0-1.7.2H.4c-.2,0-.4.2-.4.4s.2.4.4.4h4.1c.4,0,1.7.2,1.7.2.6,0,1.1.2,1.6.6.4.3.8.7,1.1,1.1.3.5.5,1,.6,1.6,0,0,0,1.3.2,1.7v4.1c0,.2.2.4.4.4s.4-.2.4-.4v-4.1c0-.4.2-1.7.2-1.7,0-.6.2-1.1.6-1.6.3-.4.7-.8,1.1-1.1.5-.3,1-.5,1.6-.6,0,0,1.3,0,1.8-.2h3.9c.2,0,.4-.2.4-.4s-.2-.4-.4-.4h0Z" />
-                        </svg>
-                      </em>-->
-                      <em class="hero-04-title__item">Digital Intelligence</em>
-                    </span>
-                  </h1>
+                  <h2 class="hero-04-title hero_h1 loading__item">
+                    Re-defining Growth Through Digital Intelligence
+                    </h1>
                 </div>
                 <div class="mxd-hero-04__descr">
                   <div class="mxd-paragraph__lists anim-uni-in-up">
@@ -1548,7 +1537,7 @@
                           <div class="mxd-accordion__item">
                             <div class="mxd-accordion__divider anim-uni-in-up"></div>
                             <div class="mxd-accordion__title anim-uni-in-up">
-                              <h6>What digital marketing services do you offer?</h6>
+                              <h6 class="text-black">What digital marketing services do you offer?</h6>
                               <div class="mxd-accordion__arrow">
                                 <i class="ph ph-plus text-black"></i>
                               </div>
@@ -1569,7 +1558,7 @@
                           <div class="mxd-accordion__item">
                             <div class="mxd-accordion__divider anim-uni-in-up"></div>
                             <div class="mxd-accordion__title anim-uni-in-up">
-                              <h6>Where are your services available?</h6>
+                              <h6 class="text-black">Where are your services available?</h6>
                               <div class="mxd-accordion__arrow">
                                 <i class="ph ph-plus text-black"></i>
                               </div>
@@ -1588,7 +1577,7 @@
                           <div class="mxd-accordion__item">
                             <div class="mxd-accordion__divider anim-uni-in-up"></div>
                             <div class="mxd-accordion__title anim-uni-in-up">
-                              <h6>How much should I budget to start working with Intellectra?</h6>
+                              <h6 class="text-black">How much should I budget to start working with Intellectra?</h6>
                               <div class="mxd-accordion__arrow">
                                 <i class="ph ph-plus text-black"></i>
                               </div>
@@ -1609,7 +1598,8 @@
                           <div class="mxd-accordion__item">
                             <div class="mxd-accordion__divider anim-uni-in-up"></div>
                             <div class="mxd-accordion__title anim-uni-in-up">
-                              <h6>Do you guarantee specific search rankings or immediate results?</h6>
+                              <h6 class="text-black">Do you guarantee specific search rankings or immediate results?
+                              </h6>
                               <div class="mxd-accordion__arrow">
                                 <i class="ph ph-plus text-black"></i>
                               </div>
@@ -1630,7 +1620,7 @@
                           <div class="mxd-accordion__item">
                             <div class="mxd-accordion__divider anim-uni-in-up"></div>
                             <div class="mxd-accordion__title anim-uni-in-up">
-                              <h6>How long will it take to see results?</h6>
+                              <h6 class="text-black">How long will it take to see results?</h6>
                               <div class="mxd-accordion__arrow">
                                 <i class="ph ph-plus text-black"></i>
                               </div>
@@ -1651,7 +1641,7 @@
                           <div class="mxd-accordion__item">
                             <div class="mxd-accordion__divider anim-uni-in-up"></div>
                             <div class="mxd-accordion__title anim-uni-in-up">
-                              <h6>Can you help if I already have a website or marketing team?</h6>
+                              <h6 class="text-black">Can you help if I already have a website or marketing team?</h6>
                               <div class="mxd-accordion__arrow">
                                 <i class="ph ph-plus text-black"></i>
                               </div>
@@ -1672,7 +1662,7 @@
                           <div class="mxd-accordion__item">
                             <div class="mxd-accordion__divider anim-uni-in-up"></div>
                             <div class="mxd-accordion__title anim-uni-in-up">
-                              <h6>How will I track my campaign’s progress?</h6>
+                              <h6 class="text-black">How will I track my campaign’s progress?</h6>
                               <div class="mxd-accordion__arrow">
                                 <i class="ph ph-plus text-black"></i>
                               </div>
@@ -1693,7 +1683,7 @@
                           <div class="mxd-accordion__item">
                             <div class="mxd-accordion__divider anim-uni-in-up"></div>
                             <div class="mxd-accordion__title anim-uni-in-up">
-                              <h6>What if I need to upgrade or modify my plan?</h6>
+                              <h6 class="text-black">What if I need to upgrade or modify my plan?</h6>
                               <div class="mxd-accordion__arrow">
                                 <i class="ph ph-plus text-black"></i>
                               </div>
