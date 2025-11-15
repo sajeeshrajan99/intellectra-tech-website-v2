@@ -275,6 +275,10 @@
     border: 1px solid rgba(231, 47, 61, 0.4) !important;
 }
 
+.bg-red-light {
+    background-color: rgba(var(--color-theme-red-rgb), 0.9) !important;
+}
+
 /*@media (prefers-color-scheme:light) {
     :root {
         --base: var(--base--light);
