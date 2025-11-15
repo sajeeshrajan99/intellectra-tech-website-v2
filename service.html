@@ -100,6 +100,37 @@
     background: rgba(12, 12, 12, 0.1);
     z-index: 1;
   }
+
+
+  /* CTA Background Image */
+  .cta-bg-image {
+    background-image: url('./assets/images/service/call-bg.jpg');
+    /* ← Your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Dark Overlay for readability */
+  .cta-bg-image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.90);
+    /* Adjust darkness */
+    z-index: 1;
+  }
+
+  /* Ensure content appears above the overlay */
+  .cta-bg-image .mxd-promo__content,
+  .cta-bg-image .mxd-promo__controls,
+  .cta-bg-image .mxd-promo__title,
+  .cta-bg-image .mxd-promo__text {
+    position: relative;
+    z-index: 2;
+  }
 </style>
 
 <body>
@@ -318,7 +349,7 @@
   <main id="mxd-page-content" class="mxd-page-content">
 
     <!-- Section - Inner Page Headline Start -->
-    <div class="mxd-section mxd-section-inner-headline section-padding-top-bottom ">
+    <div class="mxd-section mxd-section-inner-headline section-padding-top bg-color-light ">
       <div class="mxd-container grid-container">
 
         <!-- Block - Inner Page Headline Start -->
@@ -374,7 +405,7 @@
 
 
     <!-- Section - Services Pinned Image Start -->
-    <div class="mxd-section padding-pinned-img-pre-mtext">
+    <div class="mxd-section padding-pinned-img-pre-mtext bg-color-light row-padding-top">
       <div class="mxd-container">
         <!-- Section Heading -->
         <div class="mxd-block mxd-grid-item text-center no-margin mb-5">
@@ -401,7 +432,8 @@
               <div class="mxd-pinned__img-wrap">
                 <div class="mxd-pinned__img-list" role="list">
                   <div class="mxd-pinned__img-item" role="listitem">
-                    <img class="mxd-pinned__img" src="./assets/images/seo/services4.jpg" alt="Image">
+                    <img class="mxd-pinned__img" src="./assets/img/illustrations/800x800_pinned-image-01.webp"
+                      alt="Image">
                   </div>
                   <div class="mxd-pinned__img-item" role="listitem">
                     <img class="mxd-pinned__img" src="./assets/images/service/google -ad.jpg" alt="Image">
@@ -424,15 +456,17 @@
                       <img src="./assets/images/seo/services4.jpg" alt="Image">
                     </div>
                     <h2 class="mxd-pinned__title h2-small anim-uni-in-up">SEO: Search Engine Optimization</h2>
-                    <div class="mxd-pinned__tags">
-                      <span class="tag tag-default tag-outline anim-uni-in-up">UI/UX</span>
-                      <span class="tag tag-default tag-outline anim-uni-in-up">Web design</span>
-                      <span class="tag tag-default tag-outline anim-uni-in-up">Motion</span>
-                      <span class="tag tag-default tag-outline anim-uni-in-up">3D models</span>
-                    </div>
+
                     <p class="anim-uni-in-up">We drive your website to the top of Google. Our SEO agency in UK expertise
                       covers technical optimization, content strategy, and link building to capture organic, high-intent
                       traffic.</p>
+                    <div class="mxd-pinned__tags mt-5">
+                      <a class="btn btn-anim btn-default btn-outline slide-right-up bg-color-primary border-black"
+                        href="">
+                        <span class="btn-caption text-white">Learn How to Rank #1</span>
+                        <i class="ph-bold ph-arrow-up-right text-white"></i>
+                      </a>
+                    </div>
                   </div>
                   <!-- item -->
                   <div class="mxd-pinned__text-item" role="listitem">
@@ -440,17 +474,18 @@
                       <img src="./assets/images/service/google -ad.jpg" alt="Image">
                     </div>
                     <h2 class="mxd-pinned__title h2-small anim-uni-in-up">Google Ads (Performance Marketing & PPC)</h2>
-                    <div class="mxd-pinned__tags">
-                      <span class="tag tag-default tag-outline anim-uni-in-up">Frontend</span>
-                      <span class="tag tag-default tag-outline anim-uni-in-up">Interactions</span>
-                      <span class="tag tag-default tag-outline anim-uni-in-up">Backend</span>
-                      <span class="tag tag-default tag-outline anim-uni-in-up">E-Commerce</span>
-                    </div>
                     <p class="anim-uni-in-up">Need fast results? We create, manage, and optimize highly targeted
                       pay-per-click (PPC) campaigns to ensure immediate visibility, qualified leads, and maximized
                       Return on Ad Spend (ROAS).
 
                     </p>
+                    <div class="mxd-pinned__tags mt-5">
+                      <a class="btn btn-anim btn-default btn-outline slide-right-up bg-color-primary border-black"
+                        href="">
+                        <span class="btn-caption text-white">Launch a High-ROI Campaign</span>
+                        <i class="ph-bold ph-arrow-up-right text-white"></i>
+                      </a>
+                    </div>
                   </div>
                   <!-- item -->
                   <div class="mxd-pinned__text-item" role="listitem">
@@ -458,16 +493,17 @@
                       <img src="./assets/images/service/social-media-marketing.jpg" alt="Image">
                     </div>
                     <h2 class="mxd-pinned__title h2-small anim-uni-in-up">SMM: Social Media Marketing</h2>
-                    <div class="mxd-pinned__tags">
-                      <span class="tag tag-default tag-outline anim-uni-in-up">Brand strategy</span>
-                      <span class="tag tag-default tag-outline anim-uni-in-up">Logo design</span>
-                      <span class="tag tag-default tag-outline anim-uni-in-up">Guidelines</span>
-                      <span class="tag tag-default tag-outline anim-uni-in-up">Visual identity</span>
-                      <span class="tag tag-default tag-outline anim-uni-in-up">Rebranding</span>
-                    </div>
+
                     <p class="anim-uni-in-up">We build your brand presence and community on platforms like LinkedIn,
                       Instagram, and Facebook. Our SMM strategies focus on engaging content and targeted paid social
                       advertising to drive conversions.</p>
+                    <div class="mxd-pinned__tags mt-5">
+                      <a class="btn btn-anim btn-default btn-outline slide-right-up bg-color-primary border-black"
+                        href="">
+                        <span class="btn-caption text-white">Build Your Social Community</span>
+                        <i class="ph-bold ph-arrow-up-right text-white"></i>
+                      </a>
+                    </div>
                   </div>
                   <!-- item -->
                   <div class="mxd-pinned__text-item" role="listitem">
@@ -475,15 +511,17 @@
                       <img src="./assets/images/service/Content Marketing.jpg" alt="Image">
                     </div>
                     <h2 class="mxd-pinned__title h2-small anim-uni-in-up">Content Marketing</h2>
-                    <div class="mxd-pinned__tags">
-                      <span class="tag tag-default tag-outline anim-uni-in-up">Social media</span>
-                      <span class="tag tag-default tag-outline anim-uni-in-up">SEO Optimization</span>
-                      <span class="tag tag-default tag-outline anim-uni-in-up">Email</span>
-                      <span class="tag tag-default tag-outline anim-uni-in-up">Campaigns</span>
-                    </div>
+
                     <p class="anim-uni-in-up">We establish your authority and trust with valuable content. Our Content
                       Marketing generates leads by creating white papers, blogs, and case studies that attract and
                       educate your target B2B audience.</p>
+                    <div class="mxd-pinned__tags mt-5">
+                      <a class="btn btn-anim btn-default btn-outline slide-right-up bg-color-primary border-black"
+                        href="">
+                        <span class="btn-caption text-white">Start Your Authority Building</span>
+                        <i class="ph-bold ph-arrow-up-right text-white"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -496,11 +534,357 @@
     </div>
     <!-- Section - Services Pinned Image End -->
 
+    <!-- Section - Services/Features Stacking Cards Start -->
+    <section class="mxd-section section-padding-top-bottom bg-color-white overflow-hidden">
+      <div class="mxd-container grid-container">
+
+        <!-- Section Heading -->
+        <div class="mxd-block mxd-grid-item text-center no-margin">
+          <h2 class="mxd-heading reveal-type anim-uni-scale-in-left">
+            Branding &amp; Design
+          </h2>
+
+          <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-12 col-md-8">
+              <p class="mxd-subheading mt-5 anim-uni-in-up text-dark">
+                We ensure your brand identity is professional, cohesive, and memorable across all customer touch points.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Block - Services/Features Stacking Cards Start -->
+        <div class="mxd-block mxd-grid-item no-margin">
+          <div class="content__block">
+            <div class="stack-wrapper in-content-stack">
+              <div class="stack-offset"></div>
+              <div class="services-stack">
+
+                <!-- SEO -->
+                <div class="stack-item">
+                  <div class="mxd-services-stack__inner justify-between bg-color-primary">
+                    <div class="mxd-services-stack__controls">
+                      <a class="btn btn-round btn-round-large  slide-right-up anim-no-delay bg-red border-red-light shadow-lg"
+                        href="">
+                        <i class="ph ph-arrow-up-right"></i>
+                      </a>
+                    </div>
+                    <div class="mxd-services-stack__title width-70">
+                      <h3 class="text-white">Branding Strategy</h3>
+                    </div>
+                    <div class="mxd-services-stack__info width-60">
+                      <div class="mxd-services-cards__tags">
+                        <a class="btn btn-anim btn-default btn-outline slide-right-up bg-red border-theme-red" href="">
+                          <span class="btn-caption text-white">Define Your Brand Story</span>
+                          <i class="ph-bold ph-arrow-up-right text-white"></i>
+                        </a>
+                      </div>
+                      <p class="t-small-mobile text-white row-padding-bottom">
+                        Boost your visibility and dominate search results. Using advanced technical SEO, strategic
+                        keyword research, and quality link-building, we push your website to the top of Google,
+                        driving high-value organic traffic.
+                      </p>
+
+                    </div>
+                    <div class="services-stack__image">
+                      <img class="service-img service-img-s" src="assets/img/services/800x800_ser-01.webp"
+                        alt="SEO Service">
+                      <img class="service-img service-img-m" src="assets/img/services/1000x1000_ser-01.webp"
+                        alt="SEO Service">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Performance Marketing -->
+                <div class="stack-item">
+                  <div class="mxd-services-stack__inner justify-between bg-red">
+                    <div class="mxd-services-stack__controls">
+                      <a class="btn btn-round btn-round-large  slide-right-up anim-no-delay bg-color-white shadow-lg"
+                        href="">
+                        <i class="ph ph-arrow-up-right"></i>
+                      </a>
+                    </div>
+                    <div class="mxd-services-stack__title width-60">
+                      <h3 class="text-white">Graphic Design</h3>
+                    </div>
+                    <div class="mxd-services-stack__info width-60">
+                      <div class="mxd-services-cards__tags">
+                        <a class="btn btn-anim btn-default btn-outline slide-right-up bg-color-primary border-black"
+                          href="">
+                          <span class="btn-caption text-white">Define Your Brand Story</span>
+                          <i class="ph-bold ph-arrow-up-right text-white"></i>
+                        </a>
+                      </div>
+                      <p class="t-small-mobile text-white row-padding-bottom mb-5">
+                        From campaign visuals to corporate presentations, our creative team delivers high-quality,
+                        professional graphic design assets that strengthen your visual identity.
+                      </p>
+
+                    </div>
+                    <div class="services-stack__image">
+                      <img class="service-img service-img-s" src="assets/img/services/800x800_ser-02.webp"
+                        alt="PPC Service">
+                      <img class="service-img service-img-m" src="assets/img/services/1000x1000_ser-02.webp"
+                        alt="PPC Service">
+                    </div>
+                  </div>
+                </div>
 
 
 
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Block - Services/Features Stacking Cards End -->
+
+      </div>
+    </section>
+    <!-- Section - Services/Features Stacking Cards End -->
+
+    <!-- Section - Projects Pinned #01 Start -->
+    <div id="projects" class="mxd-section padding-pre-stack bg-color-white ">
+      <div class="mxd-container grid-container">
+
+        <!-- Block - Projects Pinned #01 with Section Title Start -->
+        <div class="mxd-block">
+          <div class="mxd-pinned-projects">
+            <div class="container-fluid px-0">
+              <div class="row gx-0">
+                <div class="col-12 col-xl-5 mxd-pinned-projects__static">
+                  <div class="mxd-pinned-projects__static-inner no-margin">
+
+                    <!-- Section Title Start -->
+                    <div class="mxd-section-title no-margin-desktop">
+                      <div class="container-fluid p-0">
+                        <div class="row g-0">
+                          <div class="col-12 mxd-grid-item no-margin">
+                            <div class="mxd-section-title__title anim-uni-in-up">
+                              <h2 class="reveal-type"> Digital Solutions &amp; Development</h2>
+                            </div>
+                          </div>
+                          <div class="col-12 mxd-grid-item no-margin">
+                            <div class="mxd-section-title__descr anim-uni-in-up">
+                              <p class="text-black">Beyond marketing, we build the robust technical foundation your
+                                business needs for efficiency and scale.</p>
+
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Section Title Start -->
+
+                  </div>
+                </div>
+                <div class="col-12 col-xl-7 mxd-pinned-projects__scroll">
+                  <div class="mxd-pinned-projects__scroll-inner mxd-grid-item no-margin">
+                    <!-- item -->
+                    <div class="mxd-project-item">
+                      <div
+                        class="mxd-services-cards__inner justify-end bg-color-primary radius-l padding-5x4 shadow-lg">
+                        <div class="mxd-services-cards__controls1 mb-5">
+                          <img src="assets/images/web-desing/web-image2.webp" alt="Web Development"
+                            class="img-fluid radius-l custom-full-width-img shadow-lg" />
+                        </div>
+                        <div class="m-0 mt-5 mb-3">
+                          <h4 class="text-white anim-uni-in-up">Web Development</h4>
+                        </div>
+                        <div class="">
+                          <p class="text-white anim-uni-in-up">We custom-build fast, responsive, and secure websites and
+                            landing pages optimized for mobile devices and high conversion rates.</p>
+                          <div class="anim-uni-in-up mt-4">
+                            <a class="btn btn-anim btn-default btn-outline slide-right-up bg-red border-theme-red"
+                              href="">
+                              <span class="btn-caption text-white">Build a High-Converting Website</span>
+                              <i class="ph-bold ph-arrow-up-right text-white"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- item -->
+                    <div class="mxd-project-item">
+                      <div
+                        class="mxd-services-cards__inner justify-end bg-color-primary radius-l padding-5x4 shadow-lg">
+                        <div class="mxd-services-cards__controls1 mb-5">
+                          <img src="assets/images/web-desing/graph-img-5.webp" alt="E-Commerce Platforms"
+                            class="img-fluid radius-l custom-full-width-img" />
+                        </div>
+                        <div class="mxd-services-cards__title m-0 mt-5 mb-3">
+                          <h4 class="text-white anim-uni-in-up">E-Commerce Platforms</h4>
+                        </div>
+                        <div class="">
+                          <p class="text-white anim-uni-in-up"> We design and deploy scalable e-commerce solutions that
+                            handle high traffic, secure transactions, and seamless inventory management.</p>
+                          <div class="anim-uni-in-up mt-4">
+                            <a class="btn btn-anim btn-default btn-outline slide-right-up bg-red border-theme-red"
+                              href="">
+                              <span class="btn-caption text-white">Launch Your Online Store</span>
+                              <i class="ph-bold ph-arrow-up-right text-white"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- item -->
+                    <div class="mxd-project-item">
+                      <div
+                        class="mxd-services-cards__inner justify-end bg-color-primary radius-l padding-5x4 shadow-lg">
+                        <div class="mxd-services-cards__controls1 mb-5">
+                          <img src="assets/images/service/mobile-app.webp" alt="Mobile Apps (App Development)"
+                            class="img-fluid radius-l custom-full-width-img" />
+                        </div>
+                        <div class="mxd-services-cards__title m-0 mt-5 mb-3">
+                          <h4 class="text-white anim-uni-in-up">Mobile Apps (App Development)</h4>
+                        </div>
+                        <div class="">
+                          <p class="text-white anim-uni-in-up">We develop native and cross-platform mobile applications
+                            that enhance user engagement and provide custom functionalities for your clients or internal
+                            teams.</p>
+                          <div class="anim-uni-in-up mt-4">
+                            <a class="btn btn-anim btn-default btn-outline slide-right-up bg-red border-theme-red"
+                              href="">
+                              <span class="btn-caption text-white">Discuss Your App Idea</span>
+                              <i class="ph-bold ph-arrow-up-right text-white"></i>
+                            </a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- item -->
+                    <div class="mxd-project-item">
+                      <div
+                        class="mxd-services-cards__inner justify-end bg-color-primary radius-l padding-5x4 shadow-lg">
+                        <div class="mxd-services-cards__controls1 mb-5">
+                          <img src="assets/images/web-desing/web-image6.webp" alt="Custom Solutions"
+                            class="img-fluid radius-l custom-full-width-img" />
+                        </div>
+                        <div class="mxd-services-cards__title m-0 mt-5 mb-3">
+                          <h4 class="text-white anim-uni-in-up">Custom Solutions</h4>
+                        </div>
+                        <div class="">
+                          <p class="text-white anim-uni-in-up "> For complex or unique business challenges—such as
+                            integrating marketing systems, automation, or proprietary software—we engineer custom
+                            digital solutions that solve specific operational gaps.</p>
+                          <div class="anim-uni-in-up mt-4">
+                            <a class="btn btn-anim btn-default btn-outline slide-right-up bg-red border-theme-red"
+                              href="">
+                              <span class="btn-caption text-white">Explore Custom Software</span>
+                              <i class="ph-bold ph-arrow-up-right text-white"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Block - Projects Pinned #01 with Section Title Start -->
+
+      </div>
+    </div>
+    <!-- Section - Projects Pinned #01 End -->
+
+    <!-- Section - Statistics Cards Start -->
+    <div class="mxd-section padding-grid-pre-mtext overflow-hidden bg-color-light row-padding-top">
+      <div class="mxd-container grid-container">
+
+        <!-- Block - Statistics Cards Start -->
+        <div class="mxd-block">
+          <div class="mxd-stats-cards">
+            <div class="container-fluid px-0">
+              <div class="row gx-0">
+                <!-- item -->
+                <div class="col-12 col-xl-5 mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-right">
+                  <div class="mxd-stats-cards__inner align-end bg-red radius-m padding-4">
+                    <div class="mxd-counter align-end">
+                      <p id="stats-counter-1" class="mxd-counter__number mxd-stats-number text-white">0</p>
+                      <p class="mxd-counter__descr t-140 t-bright text-white">Talented team<br> members</p>
+                    </div>
+                    <div class="mxd-stats-cards__btngroup">
+                      <a class="btn btn-anim btn-default btn-outline text-white slide-right-up border-white" href="#">
+                        <span class="btn-caption text-white">Meet Our Experts </span>
+                        <i class="ph-bold ph-arrow-up-right"></i>
+                      </a>
+                    </div>
+                    <div class="mxd-stats-cards__image mxd-stats-cards-image-1">
+                      <img src="assets/img/illustrations/800x800_card-image-01.webp" alt="Illustration">
+                    </div>
+                  </div>
+                </div>
+                <!-- item -->
+                <div class="col-12 col-xl-7 mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-left">
+                  <div class="mxd-stats-cards__inner align-end bg-color-white radius-m padding-4">
+                    <div class="mxd-stats-cards__btngroup">
+
+                    </div>
+                    <div class="mxd-counter align-end">
+                      <p id="stats-counter-2" class="mxd-counter__number mxd-stats-number text-black">0</p>
+                      <p class="mxd-counter__descr t-140 t-bright text-black">Client Retention & Satisfaction</p>
+                    </div>
+                    <div class="mxd-stats-cards__image mxd-stats-cards-image-2">
+                      <img src="assets/img/illustrations/800x800_card-image-02.webp" alt="Illustration">
+                    </div>
+                  </div>
+                </div>
+                <!-- item -->
+                <div class="col-12 col-xl-7 mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-right">
+                  <div class="mxd-stats-cards__inner bg-color-white radius-m padding-4">
+                    <div class="mxd-counter">
+                      <p id="stats-counter-3" class="mxd-counter__number mxd-stats-number text-black">0</p>
+                      <p class="mxd-counter__descr t-140 t-bright text-black">Years Driving Digital Excellence</p>
+                    </div>
+                    <!--<div class="mxd-stats-cards__btngroup">
+                        <a class="btn btn-anim btn-default btn-outline slide-right-down" href="contact.html">
+                          <span class="btn-caption">Start New Project</span>
+                          <i class="ph-bold ph-arrow-down-right"></i>
+                        </a>
+                      </div>-->
+                    <div class="mxd-stats-cards__image mxd-stats-cards-image-3">
+                      <img src="assets/img/illustrations/800x800_card-image-03.webp" alt="Illustration">
+                    </div>
+                  </div>
+                </div>
+                <!-- item -->
+                <div class="col-12 col-xl-5 mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-left">
+                  <div class="mxd-stats-cards__inner bg-color-primary radius-m padding-4">
+                    <div class="mxd-counter">
+                      <p id="stats-counter-4" class="mxd-counter__number mxd-stats-number t-bright text-white">0</p>
+                      <p class="mxd-counter__descr t-140 t-bright text-white">Successful Project <br> Launches</p>
+                    </div>
+                    <div class="mxd-stats-cards__btngroup">
+                      <a class="btn btn-anim btn-default btn-outline slide-right-up t-bright text-white border-white"
+                        href="#">
+                        <span class="btn-caption text-white">Start New Project</span>
+                        <i class="ph-bold ph-arrow-up-right text-white"></i>
+                      </a>
+                    </div>
+                    <div class="mxd-stats-cards__image mxd-stats-cards-image-4">
+                      <img src="assets/img/illustrations/800x800_card-image-04.webp" alt="Illustration">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Block - Statistics Cards End -->
+
+      </div>
+    </div>
+    <!-- Section - Statistics Cards End -->
     <!-- Section - Projects Pinned #01 Start -->
     <div class="mxd-section padding-pre-stack section-padding-top bg-color-white">
       <div class="mxd-container grid-container">
@@ -549,18 +933,14 @@
                           <div class="mxd-accordion__item">
                             <div class="mxd-accordion__divider anim-uni-in-up"></div>
                             <div class="mxd-accordion__title anim-uni-in-up">
-                              <h6>What digital marketing services do you offer?</h6>
+                              <h6>How long does a typical project take?</h6>
                               <div class="mxd-accordion__arrow">
                                 <i class="ph ph-plus text-black"></i>
                               </div>
                             </div>
                             <div class="mxd-accordion__content">
                               <p class="mxd-accordion__text text-black">
-                                We provide a complete suite of Digital Marketing Services, including SEO, Google Ads
-                                (PPC),
-                                Social Media Marketing (SMM), Content Marketing, Branding, Web & App Development,
-                                and Custom
-                                Solutions — all designed to drive measurable growth.
+                                Timelines vary by service. We give you a clear delivery roadmap before starting.
                               </p>
                             </div>
                             <div class="mxd-accordion__divider anim-uni-in-up"></div>
@@ -570,16 +950,16 @@
                           <div class="mxd-accordion__item">
                             <div class="mxd-accordion__divider anim-uni-in-up"></div>
                             <div class="mxd-accordion__title anim-uni-in-up">
-                              <h6>Where are your services available?</h6>
+                              <h6>How do you determine pricing?</h6>
                               <div class="mxd-accordion__arrow">
                                 <i class="ph ph-plus text-black"></i>
                               </div>
                             </div>
                             <div class="mxd-accordion__content">
                               <p class="mxd-accordion__text text-black">
-                                We’re based in the UK and work with clients nationwide. We also serve international
-                                businesses looking to expand their reach in UK and global markets through digital
-                                channels.
+                                Pricing depends on project scope, features, and required resources. After understanding
+                                your goals,
+                                we share a transparent proposal with fixed deliverables.
                               </p>
                             </div>
                             <div class="mxd-accordion__divider anim-uni-in-up"></div>
@@ -589,18 +969,15 @@
                           <div class="mxd-accordion__item">
                             <div class="mxd-accordion__divider anim-uni-in-up"></div>
                             <div class="mxd-accordion__title anim-uni-in-up">
-                              <h6>How much should I budget to start working with Intellectra?</h6>
+                              <h6>Do you offer monthly plans?</h6>
                               <div class="mxd-accordion__arrow">
                                 <i class="ph ph-plus text-black"></i>
                               </div>
                             </div>
                             <div class="mxd-accordion__content">
                               <p class="mxd-accordion__text text-black">
-                                Our pricing is flexible and depends entirely on your goals and the services you
-                                need. After
-                                a free consultation, we’ll create a custom solution plan that fits your budget —
-                                whether
-                                you’re a small startup or a large company.
+                                Yes, we offer flexible retainer options for marketing, content, and tech support.
+                                Plans are designed to scale with your business growth.
                               </p>
                             </div>
                             <div class="mxd-accordion__divider anim-uni-in-up"></div>
@@ -610,106 +987,22 @@
                           <div class="mxd-accordion__item">
                             <div class="mxd-accordion__divider anim-uni-in-up"></div>
                             <div class="mxd-accordion__title anim-uni-in-up">
-                              <h6>Do you guarantee specific search rankings or immediate results?</h6>
+                              <h6>Can I start with one service and scale later?</h6>
                               <div class="mxd-accordion__arrow">
                                 <i class="ph ph-plus text-black"></i>
                               </div>
                             </div>
                             <div class="mxd-accordion__content">
                               <p class="mxd-accordion__text text-black">
-                                No, ethical agencies cannot guarantee exact SEO rankings or immediate traffic.
-                                However, we
-                                guarantee proven, data-driven strategies and transparent reporting that aim for the
-                                maximum
-                                possible growth for your investment.
-                              </p>
-                            </div>
-                            <div class="mxd-accordion__divider anim-uni-in-up"></div>
-                          </div>
-
-                          <!-- FAQ 5 -->
-                          <div class="mxd-accordion__item">
-                            <div class="mxd-accordion__divider anim-uni-in-up"></div>
-                            <div class="mxd-accordion__title anim-uni-in-up">
-                              <h6>How long will it take to see results?</h6>
-                              <div class="mxd-accordion__arrow">
-                                <i class="ph ph-plus text-black"></i>
-                              </div>
-                            </div>
-                            <div class="mxd-accordion__content">
-                              <p class="mxd-accordion__text text-black">
-                                Results depend on your chosen service and goals. Paid Ads can deliver leads within
-                                days,
-                                while SEO and organic strategies usually take 3–6 months. We ensure both short-term
-                                wins and
-                                long-term growth.
-                              </p>
-                            </div>
-                            <div class="mxd-accordion__divider anim-uni-in-up"></div>
-                          </div>
-
-                          <!-- FAQ 6 -->
-                          <div class="mxd-accordion__item">
-                            <div class="mxd-accordion__divider anim-uni-in-up"></div>
-                            <div class="mxd-accordion__title anim-uni-in-up">
-                              <h6>Can you help if I already have a website or marketing team?</h6>
-                              <div class="mxd-accordion__arrow">
-                                <i class="ph ph-plus text-black"></i>
-                              </div>
-                            </div>
-                            <div class="mxd-accordion__content">
-                              <p class="mxd-accordion__text text-black">
-                                Yes. We collaborate with your existing team or improve your current setup. Whether
-                                you need
-                                a website revamp, SEO optimization, or campaign management, we can enhance what you
-                                already
-                                have — without disrupting ongoing work.
-                              </p>
-                            </div>
-                            <div class="mxd-accordion__divider anim-uni-in-up"></div>
-                          </div>
-
-                          <!-- FAQ 7 -->
-                          <div class="mxd-accordion__item">
-                            <div class="mxd-accordion__divider anim-uni-in-up"></div>
-                            <div class="mxd-accordion__title anim-uni-in-up">
-                              <h6>How will I track my campaign’s progress?</h6>
-                              <div class="mxd-accordion__arrow">
-                                <i class="ph ph-plus text-black"></i>
-                              </div>
-                            </div>
-                            <div class="mxd-accordion__content">
-                              <p class="mxd-accordion__text text-black">
-                                You’ll have full visibility through performance dashboards, weekly updates, and
-                                monthly
-                                reports. We track key metrics like traffic, conversions, ROI, and engagement — all
-                                shared in
-                                real time for complete transparency.
-                              </p>
-                            </div>
-                            <div class="mxd-accordion__divider anim-uni-in-up"></div>
-                          </div>
-
-                          <!-- FAQ 8 -->
-                          <div class="mxd-accordion__item">
-                            <div class="mxd-accordion__divider anim-uni-in-up"></div>
-                            <div class="mxd-accordion__title anim-uni-in-up">
-                              <h6>What if I need to upgrade or modify my plan?</h6>
-                              <div class="mxd-accordion__arrow">
-                                <i class="ph ph-plus text-black"></i>
-                              </div>
-                            </div>
-                            <div class="mxd-accordion__content">
-                              <p class="mxd-accordion__text text-black">
-                                No problem. Our packages are flexible, and you can scale or modify your plan anytime
-                                with
-                                prior notice. We adapt to your business pace — not the other way around.
+                                Absolutely. Many clients begin with branding or a website, then build campaigns and
+                                custom tools as they grow. Our solutions are designed to evolve with your business.
                               </p>
                             </div>
                             <div class="mxd-accordion__divider anim-uni-in-up"></div>
                           </div>
 
                         </div>
+
                       </div>
                     </div>
                   </div>
@@ -733,7 +1026,8 @@
         <!-- Block - CTA Start -->
         <div class="mxd-block">
           <div class="mxd-promo">
-            <div class="mxd-promo__inner anim-zoom-out-container bg-color-primary">
+            <div class="mxd-promo__inner anim-zoom-out-container bg-color-primary cta-bg-image">
+
               <!-- background -->
               <div class="bg-color-primary"></div>
 
@@ -741,14 +1035,14 @@
               <div class="mxd-promo__content">
                 <p class="mxd-promo__title anim-uni-in-up">
 
-                  <span class="mxd-promo__caption reveal-type" style="color: white;">Let’s Grow Together</span>
+                  <span class="mxd-promo__caption reveal-type" style="color: white;">Ready to Elevate Your Digital
+                    Footprint?</span>
                 </p>
                 <div class="mxd-promo__text anim-uni-in-up ">
                   <div class="row">
                     <div class="col-12 col-md-6">
                       <p class="text-white">
-                        Whether you’re scaling a startup or optimizing a global brand, Intellectra Tech is here to make
-                        your digital journey smarter and stronger.
+                        Let's discuss how our top marketing agency in UK expertise can drive your next success story.
                       </p>
                     </div>
                   </div>
@@ -759,13 +1053,13 @@
                 <div class="mxd-promo__controls anim-uni-in-up d-none d-md-block">
                   <a class="btn btn-anim btn-default  bg-red  border-red-light slide-right-up shadow-lg "
                     href="contact.html">
-                    <span class="btn-caption text-white">Book a Free Consultation</span>
+                    <span class="btn-caption text-white">Your Growth Plan </span>
                     <i class="ph-bold ph-arrow-up-right"></i>
                   </a>
                   <div class="mt-5">
                     <a class="btn btn-anim btn-default bg-red  border-red-light slide-right-up shadow-lg"
                       href="services.html">
-                      <span class="btn-caption text-white">Talk to Our Team Today</span>
+                      <span class="btn-caption text-white">Claim Your Free Strategy Session</span>
                       <i class="ph-bold ph-arrow-up-right"></i>
                     </a>
                   </div>
@@ -773,13 +1067,13 @@
                 <div class="mxd-promo__controls anim-uni-in-up d-block d-md-none">
                   <a class="btn btn-anim btn-default  bg-red  border-red-light slide-right-up shadow-lg "
                     href="contact.html">
-                    <span class="btn-caption text-white">Book a Free Consultation</span>
+                    <span class="btn-caption text-white">Your Growth Plan</span>
                     <i class="ph-bold ph-arrow-up-right"></i>
                   </a>
                   <div class="mt-5">
                     <a class="btn btn-anim btn-default bg-red  border-red-light slide-right-up shadow-lg"
                       href="services.html">
-                      <span class="btn-caption text-white">Talk to Our Team Today</span>
+                      <span class="btn-caption text-white">Free Strategy Session</span>
                       <i class="ph-bold ph-arrow-up-right"></i>
                     </a>
                   </div>
